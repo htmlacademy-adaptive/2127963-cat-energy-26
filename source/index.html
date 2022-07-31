@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo-picture logo-picture">
-        <img class="main-header__logo-picture-image" src="img/logo/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт энерджи.">
-      </a>
-      <a class="main-header__logo-text logo-text">
-        <img class="main-header__logo-text-image" src="img/logo/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи.">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <ul class="main-navigation__list main-navigation-list">
-          <li class="main-navigation-list__item main-navigation-list__item--current">
-            <a>главная</a>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo-picture logo-picture">
+      <img class="main-header__logo-picture-image" src="img/logo/logo-mobile.svg" width="34" height="38"
+        alt="Логотип Кэт энерджи.">
+    </a>
+    <a class="main-header__logo-text logo-text">
+      <img class="main-header__logo-text-image" src="img/logo/logo-text.svg" width="101" height="18"
+        alt="Логотип Кэт энерджи.">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <ul class="main-navigation__list main-navigation-list">
+        <li class="main-navigation-list__item main-navigation-list__item--current">
+          <a>главная</a>
+        </li>
+        <li class="main-navigation-list__item">
+          <a href="catalog.html">каталог продукции</a>
+        </li>
+        <li class="main-navigation-list__item">
+          <a href="form.html">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1 class="visually-hidden">Кэт энерджи - питание для котов</h1>
+    <section class="program">
+      <header class="program__header">
+        <h2 class="program__title section-title section-title--modified">Функциональное питание для котов</h2>
+        <p class="program__slogan">Занялся собой? Займись котом!</p>
+        <img class="program__image" src="img/index-can-mobile.png" width="280" height="270"
+          alt="Упаковка с питанием Кэт энерджи.">
+        <a class="program__search button" href="form.html">подобрать программу</a>
+      </header>
+        <ul class="program__list program-type">
+          <li class="program__item">
+            <h3 class="program__title">похудение</h3>
+            <p class="programm__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="programm__link button button--additional" href="#">каталог slim</a>
           </li>
-          <li class="main-navigation-list__item">
-            <a href="catalog.html">каталог продукции</a>
+          <li class="program__item">
+            <h3 class="program__title">Набор массы</h3>
+            <p class="programm__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="programm__link button button--additional" href="#">каталог pro</a>
           </li>
-          <li class="main-navigation-list__item">
-            <a href="form.html">подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="main-container">
-      <h1 class="page-title">Функциональное питание для котов</h1>
-      <section class="programs">
-        <h2 class="visually-hidden">Программы питания</h2>
-        <p class="programs__slogan">Занялся собой? Займись котом!</p>
-        <img class="programs__image" src="" alt="">
+      </ul>
+    </section>
 
 
-      </section>
-
-
-    </main>
+  </main>
 
 
 
-  </body>
+</body>
+
 </html>
