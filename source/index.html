@@ -85,31 +85,13 @@
         </div>
       </dl>
       <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
-      <ul class="example__list examples-slider">
-        <li class="example__item">
-          <img src="img/cat-before-mobile.png" width="280" height="232" alt="Было.">
-        </li>
-        <li class="example__item">
-          <img src="img/cat-after-mobile.png" width="243" height="232" alt="Стало.">
-        </li>
-      </ul>
-      <fieldset class="example__comparison-field">
-        <legend class="visually-hidden">До и после.</legend>
-        <ul class="example__comparison-list comparison-list">
-          <li class="example__comparison-item">
-            <label class="example__comparison-control">
-              <input class="example__comparison-input" type="radio" name="comparison" value="before" checked>
-              <span>было</span>
-            </label>
-          </li>
-          <li class="example__comparison-item">
-            <label class="example__comparison-control">
-              <input class="example__comparison-input" type="radio" name="comparison" value="after">
-              <span>стало</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+      <section class="example__gallery">
+        <h3 class="example__gallery-title">Фото до и после</h3>
+        <img src="img/cat-before-mobile.png" width="280" height="232" alt="Было.">
+        <img src="img/cat-after-mobile.png" width="243" height="232" alt="Стало.">
+        <button class="example__gallery-button button button--gallery" type="button">было</button>
+        <button class="example__gallery-button button button--gallery" type="button">стало</button>
+      </section>
     </section>
   </main>
   <footer class="footer">
@@ -120,7 +102,7 @@
       <address class="contacts__address">
         <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </address>
-      <div class="contacts_map"></div>
+      <div class="contacts__map"></div>
     </section>
     <section class="footer__logo">
       <h3 class="visually-hidden">Логотип Кэт энерджи</h3>
