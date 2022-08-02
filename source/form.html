@@ -41,95 +41,95 @@
       <h2 class="visually-hidden">Анкета</h2>
       <p class="information-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-      <fieldset class="information-form__customer customer-information">
+      <fieldset class="information-form__group customer-information">
         <legend class="visually-hidden">Данные кота</legend>
-        <ul class="information-form__data-list">
-          <li class="information-form__data-item">
-            <label class="information-form__name" for="cat-name">ИМЯ:*</label>
+        <ul class="information-form__list data-list">
+          <li class="information-form__item data-item">
+            <label class="information-form__description" for="cat-name">ИМЯ:*</label>
             <input class="information-form__field" type="text" placeholder="барсик" name="cat-name" id="cat-name"
               required>
           </li>
-          <li class="information-form__data-item">
-            <label class="information-form__name" for="cat-weight">Вес (кг):*</label>
+          <li class="information-form__item data-item">
+            <label class="information-form__description" for="cat-weight">Вес (кг):*</label>
             <input class="information-form__field" type="number" value="7" name="cat-weight" id="cat-weight" required>
           </li>
-          <li class="information-form__data-item">
-            <label class="information-form__name" for="cat-age">Возраст (лет):</label>
+          <li class="information-form__item data-item">
+            <label class="information-form__description" for="cat-age">Возраст (лет):</label>
             <input class="information-form__field" type="number" value="7" name="cat-age" id="cat-age">
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="information-form__program program-choice">
+      <fieldset class="information-form__group program-choice">
         <legend class="visually-hidden">Выбор программы</legend>
-        <ul class="information-form__program-list">
-          <li class="information-form__program-item">
+        <ul class="information-form__list program-list">
+          <li class="information-form__item program-item">
             <label class="information-form__control">
-              <input class="information-form__control-field" type="radio" name="program-type" value="fit" checked>
+              <input class="information-form__value" type="radio" name="program-type" value="fit" checked>
               <span>похудение</span>
             </label>
           </li>
-          <li class="information-form__program-item">
+          <li class="information-form__item program-item">
             <label class="information-form__control">
-              <input class="information-form__control-field" type="radio" name="program-type" value="strong">
+              <input class="information-form__value" type="radio" name="program-type" value="strong">
               <span>Набор массы</span>
             </label>
           </li>
-          <li class="information-form__program-item">
+          <li class="information-form__item program-item">
             <label class="information-form__control">
-              <input class="information-form__control-field" type="radio" name="program-type" value="advice">
+              <input class="information-form__value" type="radio" name="program-type" value="advice">
               <span>Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="information-form__contacts owner-information">
-        <legend class="information-form__contacts-title">Контактные данные (владельца кота)</legend>
-        <ul class="information-form__contacts-list">
-          <li class="information-form__contacts-item">
-            <label class="information-form__contacts-description" for="e-mail">E-mail:*</label>
-            <input class="information-form__contacts-field" type="email" placeholder="kuklachev@gmail.com" name="e-mail"
+      <fieldset class="information-form__group owner-information">
+        <legend class="information-form__title">Контактные данные (владельца кота)</legend>
+        <ul class="information-form__list contacts-list">
+          <li class="information-form__item contacts-item">
+            <label class="information-form__description" for="e-mail">E-mail:*</label>
+            <input class="information-form__field" type="email" placeholder="kuklachev@gmail.com" name="e-mail"
               id="e-mail" required>
           </li>
-          <li class="information-form__contacts-item">
-            <label class="information-form__contacts-description" for="phone">Телефон:*</label>
-            <input class="information-form__contacts-field" type="tel" placeholder="8 (960) 900-60-90" name="phone"
+          <li class="information-form__item contacts-item">
+            <label class="information-form__description" for="phone">Телефон:*</label>
+            <input class="information-form__field" type="tel" placeholder="8 (960) 900-60-90" name="phone"
               id="phone" required>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="information-form__comment comment">
-        <legend class="information-form__comment-title">Комментарий</legend>
+      <fieldset class="information-form__group comment">
+        <legend class="information-form__title">Комментарий</legend>
         <textarea class="information-form__comment-field" name="comment" id="comment-field"
           rows="8">Расскажите обо всех повАдках кота</textarea>
       </fieldset>
 
-      <fieldset class="information-form__additional addtional-products">
-        <legend class="information-form__additional-title">Дополнительно</legend>
-        <ul class="information-form__additional-list">
-          <li class="information-form__additional-item">
-            <label class="information-additional__control">
-              <input class="information-form__additional-field" type="checkbox" name="sugar-substitute" checked>
+      <fieldset class="information-form__group addtional-products">
+        <legend class="information-form__title">Дополнительно</legend>
+        <ul class="information-form__list additional-list">
+          <li class="information-form__item additional-item">
+            <label class="information-form__control">
+              <input class="information-form__value information-form__value--checkbox" type="checkbox" name="sugar-substitute" checked>
               <span>сахарозаменитель</span>
             </label>
           </li>
-          <li class="information-form__additional-item">
-            <label class="information-additional__control">
-              <input class="information-form__additional-field" type="checkbox" name="water">
+          <li class="information-form__item additional-item">
+            <label class="information-form__control">
+              <input class="information-form__value information-form__value--checkbox" type="checkbox" name="water">
               <span>питьевая вода</span>
             </label>
           </li>
-          <li class="information-form__additional-item">
-            <label class="information-additional__control">
-              <input class="information-form__additional-field" type="checkbox" name="milk">
+          <li class="information-form__item additional-item">
+            <label class="information-form__control">
+              <input class="information-form__value information-form__value--checkbox" type="checkbox" name="milk">
               <span>молоко</span>
             </label>
           </li>
-          <li class="information-form__additional-item">
-            <label class="information-additional__control">
-              <input class="information-form__additional-field" type="checkbox" name="vitamins">
+          <li class="information-form__item additional-item">
+            <label class="information-form__control">
+              <input class="information-form__value information-form__value--checkbox" type="checkbox" name="vitamins">
               <span>витамины</span>
             </label>
           </li>
