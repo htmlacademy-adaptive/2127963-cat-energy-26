@@ -1,0 +1,23 @@
+@use "../global/variables.scss" as *;
+
+.function {
+  padding: 0 20px 49px 20px;
+}
+
+.function__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.function__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.function__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-color;
+}

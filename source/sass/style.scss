@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+@use "global/fonts.scss";
+@use "global/global.scss";
+@use "blocks/page.scss";
+@use "blocks/button.scss";
+@use "blocks/main-header.scss";
+@use "blocks/main-navigation.scss";
+@use "blocks/site-navigation.scss";
+@use "blocks/main-container.scss";
+@use "blocks/program.scss";
+@use "blocks/encourage.scss";
+@use "blocks/section-title.scss";
+@use "blocks/program-type.scss";
+@use "blocks/function.scss";
+@use "blocks/example.scss";
+@use "blocks/gallery.scss";
+@use "blocks/contacts.scss";
+@use "blocks/social.scss"
