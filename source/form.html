@@ -35,8 +35,8 @@
     </nav>
   </header>
 
-  <main class="main-container">
-    <h1 class="page-title">Подбор программы</h1>
+  <main class="main-container main-container--form">
+    <h1 class="main-container__title section-title section-title--modified">Подбор программы</h1>
 
     <form class="information-form" action="https://echo.htmlacademy.ru/" method="post">
       <h2 class="visually-hidden">Анкета</h2>
@@ -47,7 +47,7 @@
         <ul class="information-form__list data-list">
           <li class="information-form__item data-item">
             <label class="information-form__description" for="cat-name">Имя:*</label>
-            <input class="information-form__field" type="text" placeholder="барсик" name="cat-name" id="cat-name"
+            <input class="information-form__field" type="text" placeholder="Барсик" name="cat-name" id="cat-name"
               required>
           </li>
           <li class="information-form__item data-item">
@@ -64,19 +64,19 @@
       <fieldset class="information-form__group program-choice">
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="information-form__list program-list">
-          <li class="information-form__item program-item">
+          <li class="information-form__item information-form__item--program program-item">
             <label class="information-form__control radio">
               <input class="information-form__value" type="radio" name="program-type" value="fit" checked>
               <span>Похудение</span>
             </label>
           </li>
-          <li class="information-form__item program-item">
+          <li class="information-form__item information-form__item--program rogram-item">
             <label class="information-form__control radio">
               <input class="information-form__value" type="radio" name="program-type" value="strong">
               <span>Набор массы</span>
             </label>
           </li>
-          <li class="information-form__item program-item">
+          <li class="information-form__item information-form__item--program program-item">
             <label class="information-form__control radio">
               <input class="information-form__value" type="radio" name="program-type" value="advice">
               <span>Не знаю (нужен ваш совет)</span>
@@ -102,33 +102,33 @@
       </fieldset>
 
       <fieldset class="information-form__group comment">
-        <legend class="information-form__title">Комментарий</legend>
+        <legend class="information-form__title information-form__title--comment">Комментарий</legend>
         <textarea class="information-form__comment-field" name="comment" id="comment-field"
           rows="8">Расскажите обо всех повадках кота</textarea>
       </fieldset>
 
       <fieldset class="information-form__group addtional-products">
-        <legend class="information-form__title">Дополнительно</legend>
+        <legend class="information-form__title information-form__title--additional">Дополнительно</legend>
         <ul class="information-form__list additional-list">
-          <li class="information-form__item additional-item">
+          <li class="information-form__item information-form__item--additional additional-item">
             <label class="information-form__control checkbox">
               <input class="information-form__value" type="checkbox" name="sugar-substitute" checked>
               <span>Сахарозаменитель</span>
             </label>
           </li>
-          <li class="information-form__item additional-item">
+          <li class="information-form__item information-form__item--additional additional-item">
             <label class="information-form__control checkbox">
               <input class="information-form__value" type="checkbox" name="water">
               <span>Питьевая вода</span>
             </label>
           </li>
-          <li class="information-form__item additional-item">
+          <li class="information-form__item information-form__item--additional additional-item">
             <label class="information-form__control checkbox">
               <input class="information-form__value" type="checkbox" name="milk">
               <span>Молоко</span>
             </label>
           </li>
-          <li class="information-form__item additional-item">
+          <li class="information-form__item information-form__item--additional additional-item">
             <label class="information-form__control checkbox">
               <input class="information-form__value" type="checkbox" name="vitamins">
               <span>Витамины</span>
@@ -144,7 +144,7 @@
   </main>
   <footer class="main-footer">
     <h2 class="visually-hidden">Контакты</h2>
-    <section class="main-footer__contacts contacts contacts--additional">
+    <section class="main-footer__contacts contacts">
       <h3 class="visually-hidden">Адрес</h3>
       <p class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</p>
       <address class="contacts__address">
