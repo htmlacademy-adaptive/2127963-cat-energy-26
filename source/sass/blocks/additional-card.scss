@@ -1,0 +1,24 @@
+@use "../global/variables.scss" as *;
+
+.additional-card__link {
+  text-decoration: none;
+}
+
+.additional-card__title {
+  margin: 0;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-modified-color;
+}
+
+.additional-card__info {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special-color;
+}
+
+.additional-card__price {
+  text-transform: uppercase;
+  text-align: right;
+}

@@ -12,3 +12,13 @@
   border: none;
   cursor: pointer;
 }
+
+.button--additional {
+  color: $additional-color;
+  background-color: $contrast-color;
+}
+
+.button--basic {
+  color: $special-color;
+  background-color: $basic-color;
+}

@@ -1,0 +1,31 @@
+@use "../global/variables.scss" as *;
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  margin: 0;
+  text-transform: uppercase;
+  color: $special-modified-color;
+}
+
+.product-card__info-item {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-color;
+}
+
+.product-card__value {
+  margin: 0;
+  text-align: right;
+}
+
+.product-card__more {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $special-color;
+}

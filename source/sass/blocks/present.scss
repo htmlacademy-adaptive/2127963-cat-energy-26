@@ -1,13 +1,17 @@
-@use "../global/variables.scss"  as *;
+@use "../global/variables.scss" as *;
 
-.encourage {
-  padding-top: 27px;
-  padding-bottom: 164px;
+.present {
+  padding: 187px 61px 43px 58px;
+  font-family: "Arial", sans-serif;
   color: $contrast-color;
   text-align: center;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/background/cat-tongue.jpg");
+    url("../img/background/cat-bag.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.present__text {
+  margin: 0;
 }
