@@ -1,0 +1,453 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  margin: 0 auto;
+  width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
+}
+
+.button--additional {
+  color: #111111;
+  background-color: #ffffff;
+}
+
+.button--basic {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+.main-header {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation {
+  list-style-type: none;
+}
+
+.site-navigation__item {
+  text-align: center;
+}
+
+.site-navigation__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-container--form {
+  padding: 27px 20px 32px;
+}
+
+.main-container--catalog {
+  padding: 27px 20px 35px;
+}
+
+.main-container__title {
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.main-container__title--catalog {
+  margin-bottom: 41px;
+}
+
+.program__header {
+  margin-bottom: 20px;
+}
+
+.program__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.program__slogan {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.program__image {
+  margin-bottom: 3px;
+}
+
+.program__search {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program__list {
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.program__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.encourage {
+  padding-top: 27px;
+  padding-bottom: 164px;
+  color: #ffffff;
+  text-align: center;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background/cat-tongue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.section-title--modified {
+  line-height: 36px;
+}
+
+.program-type {
+  padding: 30px 33px 22px 20px;
+  background-color: #f2f2f2;
+}
+
+.program-type__title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program-type__description {
+  margin: 0;
+  margin-bottom: 42px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.program-type__link {
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.function {
+  padding: 0 20px 49px 20px;
+}
+
+.function__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.function__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.function__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example {
+  padding: 25px 20px 40px 20px;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__stats-list {
+  margin: 0;
+}
+
+.example__stats-number {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__stats-desription {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
+}
+
+.example__cost {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gallery__text {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-footer {
+  background-color: #f2f2f2;
+}
+
+.contacts {
+  padding: 26px 20px;
+}
+
+.contacts--additional {
+  background-color: #ffffff;
+}
+
+.contacts__cooperation {
+  margin: 0;
+  color: #111111;
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: #444444;
+  font-style: normal;
+}
+
+.contacts__address-text {
+  margin: 0;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.information-form__text {
+  margin: 0;
+  margin-bottom: 39px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.information-form__group {
+  padding: 0;
+  border: none;
+}
+
+.information-form__title {
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.information-form__title--comment {
+  margin-bottom: 38px;
+}
+
+.information-form__title--additional {
+  margin-bottom: 34px;
+}
+
+.information-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.information-form__item {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.information-form__item--program {
+  color: #222222;
+}
+
+.information-form__item--additional {
+  color: #000000;
+}
+
+.information-form__field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.information-form__comment-field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.information-form__legend {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.product-cards__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  margin: 0;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.product-card__info-item {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.product-card__value {
+  margin: 0;
+  text-align: right;
+}
+
+.product-card__more {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+}
+
+.additional-products__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional-products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.additional-card__link {
+  text-decoration: none;
+}
+
+.additional-card__title {
+  margin: 0;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional-card__info {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.additional-card__price {
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.present {
+  padding: 187px 61px 43px 58px;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background/cat-bag.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.present__text {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
