@@ -17,14 +17,14 @@
   margin-bottom: 35px;
   font-size: 24px;
   line-height: 26px;
-}
 
-.information-form__title--comment {
-  margin-bottom: 38px;
-}
+  &--comment {
+    margin-bottom: 38px;
+  }
 
-.information-form__title--additional {
-  margin-bottom: 34px;
+  &--additional {
+    margin-bottom: 34px;
+  }
 }
 
 .information-form__list {
@@ -38,14 +38,14 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-color;
-}
 
-.information-form__item--program {
-  color: $special-modified-color;
-}
+  &--program {
+    color: $special-modified-color;
+  }
 
-.information-form__item--additional {
-  color: $main-text-color;
+  &--additional {
+    color: $main-text-color;
+  }
 }
 
 .information-form__field {

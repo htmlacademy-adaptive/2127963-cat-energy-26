@@ -2,10 +2,10 @@
 
 .contacts {
   padding: 26px 20px;
-}
 
-.contacts--additional {
-  background-color: $contrast-color;
+  &--additional {
+    background-color: $contrast-color;
+  }
 }
 
 .contacts__cooperation {
