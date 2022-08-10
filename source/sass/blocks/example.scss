@@ -1,0 +1,44 @@
+@use "../global/variables.scss" as *;
+
+.example {
+  padding: 25px 20px 40px 20px;
+  background-color: $secondary-color;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-color;
+}
+
+.example__stats-list {
+  margin: 0;
+}
+
+.example__stats-number {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__stats-desription {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $special-color;
+}
+
+.example__cost {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}

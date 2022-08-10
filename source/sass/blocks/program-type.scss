@@ -1,0 +1,30 @@
+@use "../global/variables.scss"  as *;
+
+.program-type {
+  padding: 30px 33px 22px 20px;
+  background-color: $basic-color;
+}
+
+.program-type__title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program-type__description {
+  margin: 0;
+  margin-bottom: 42px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-color;
+}
+
+.program-type__link {
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+}

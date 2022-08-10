@@ -1,0 +1,34 @@
+@use "../global/mixins.scss" as *;
+
+.program__header {
+  margin-bottom: 20px;
+}
+
+.program__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.program__slogan {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.program__image {
+  margin-bottom: 3px;
+}
+
+.program__search {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program__list {
+  @include reset-list;
+}
+
+.program__item:not(:last-child) {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,5 @@
+@use "../global/mixins.scss" as *;
+
+.social__list {
+  @include reset-list;
+}

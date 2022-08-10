@@ -1,0 +1,24 @@
+@use "../global/variables.scss"  as *;
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $contrast-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: $main-color;
+  border: none;
+  cursor: pointer;
+
+  &--additional {
+    color: $additional-color;
+    background-color: $contrast-color;
+  }
+
+  &--basic {
+    color: $special-color;
+    background-color: $basic-color;
+  }
+}

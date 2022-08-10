@@ -1,0 +1,13 @@
+@use "../global/variables.scss"  as *;
+
+.encourage {
+  padding-top: 27px;
+  padding-bottom: 164px;
+  color: $contrast-color;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/background/cat-tongue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

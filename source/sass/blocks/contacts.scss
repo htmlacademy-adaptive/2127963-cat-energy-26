@@ -1,0 +1,25 @@
+@use "../global/variables.scss"  as *;
+
+.contacts {
+  padding: 26px 20px;
+
+  &--additional {
+    background-color: $contrast-color;
+  }
+}
+
+.contacts__cooperation {
+  margin: 0;
+  color: $additional-color;
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: $special-color;
+  font-style: normal;
+}
+
+.contacts__address-text {
+  margin: 0;
+}

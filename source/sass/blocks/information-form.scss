@@ -1,0 +1,76 @@
+@use "../global/variables.scss" as *;
+@use "../global/mixins.scss" as *;
+
+.information-form__text {
+  margin: 0;
+  margin-bottom: 39px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.information-form__group {
+  padding: 0;
+  border: none;
+}
+
+.information-form__title {
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 26px;
+
+  &--comment {
+    margin-bottom: 38px;
+  }
+
+  &--additional {
+    margin-bottom: 34px;
+  }
+}
+
+.information-form__list {
+  @include reset-list;
+}
+
+.information-form__item {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-color;
+
+  &--program {
+    color: $special-modified-color;
+  }
+
+  &--additional {
+    color: $main-text-color;
+  }
+}
+
+.information-form__field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-color;
+}
+
+.information-form__comment-field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-color;
+}
+
+.information-form__legend {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}

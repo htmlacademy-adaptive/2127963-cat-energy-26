@@ -1,0 +1,18 @@
+.main-container {
+  &--form {
+    padding: 27px 20px 32px;
+  }
+
+  &--catalog {
+    padding: 27px 20px 35px;
+  }
+}
+
+.main-container__title {
+  margin: 0;
+  margin-bottom: 37px;
+
+  &--catalog {
+    margin-bottom: 41px;
+  }
+}
