@@ -50,12 +50,10 @@
   border: none;
   cursor: pointer;
 }
-
 .button--additional {
   color: #111111;
   background-color: #ffffff;
 }
-
 .button--basic {
   color: #444444;
   background-color: #f2f2f2;
@@ -88,7 +86,6 @@
 .main-container--form {
   padding: 27px 20px 32px;
 }
-
 .main-container--catalog {
   padding: 27px 20px 35px;
 }
@@ -97,7 +94,6 @@
   margin: 0;
   margin-bottom: 37px;
 }
-
 .main-container__title--catalog {
   margin-bottom: 41px;
 }
@@ -129,7 +125,7 @@
 
 .program__list {
   margin: 0;
-  padding: 20px;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -151,7 +147,6 @@
   font-size: 36px;
   line-height: 40px;
 }
-
 .section-title--modified {
   line-height: 36px;
 }
@@ -263,7 +258,6 @@
 .contacts {
   padding: 26px 20px;
 }
-
 .contacts--additional {
   background-color: #ffffff;
 }
@@ -308,11 +302,9 @@
   font-size: 24px;
   line-height: 26px;
 }
-
 .information-form__title--comment {
   margin-bottom: 38px;
 }
-
 .information-form__title--additional {
   margin-bottom: 34px;
 }
@@ -329,11 +321,9 @@
   text-transform: uppercase;
   color: #444444;
 }
-
 .information-form__item--program {
   color: #222222;
 }
-
 .information-form__item--additional {
   color: #000000;
 }
