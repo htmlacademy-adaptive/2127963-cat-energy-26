@@ -1,3 +1,5 @@
+@use "../global/mixins.scss" as *;
+
 .program__header {
   margin-bottom: 20px;
 }
@@ -24,9 +26,7 @@
 }
 
 .program__list {
-  margin: 0;
-  padding: 20px;
-  list-style-type: none;
+  @include reset-list;
 }
 
 .program__item:not(:last-child) {

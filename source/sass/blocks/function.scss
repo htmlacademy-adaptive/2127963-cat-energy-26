@@ -1,4 +1,5 @@
 @use "../global/variables.scss" as *;
+@use "../global/mixins.scss" as *;
 
 .function {
   padding: 0 20px 49px 20px;
@@ -10,9 +11,7 @@
 }
 
 .function__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include reset-list;
 }
 
 .function__item {
