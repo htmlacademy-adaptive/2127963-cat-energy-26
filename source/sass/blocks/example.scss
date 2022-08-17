@@ -1,8 +1,36 @@
 @use "../global/variables.scss" as *;
+@use "../global/viewports.scss" as *;
 
 .example {
   padding: 25px 20px 40px 20px;
   background-color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 30px 100px 30px;
+    background-image: linear-gradient($contrast-color 619px, $secondary-color 619px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient($contrast-color 205px, $secondary-color 205px);
+  }
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 814px 75px 30px;
+  }
 }
 
 .example__title {
@@ -11,6 +39,7 @@
 }
 
 .example__description {
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -19,6 +48,16 @@
 
 .example__stats-list {
   margin: 0;
+  display: flex;
+
+  /*@media (min-width: $tablet-width) {
+
+  }*/
+
+  /*@media (min-width: $desktop-width) {
+    padding-top: 69px;
+    padding-bottom: 85px;
+  }*/
 }
 
 .example__stats-number {

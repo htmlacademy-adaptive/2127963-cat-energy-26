@@ -1,5 +1,17 @@
+@use "../global/viewports.scss" as *;
+
 .site-navigation {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 440px;
+    max-width: 440px + 70;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 478px;
+    max-width: 478px + 110;
+  }
 }
 
 .site-navigation__item {

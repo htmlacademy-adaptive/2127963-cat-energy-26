@@ -1,16 +1,37 @@
 @use "../global/variables.scss" as *;
+@use "../global/viewports.scss" as *;
 
 .page {
   height: 100%;
 }
 
 .page__body {
-  margin: 0 auto;
-  width: 320px;
+  position: relative;
+  margin: 0;
+  min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $main-text-color;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 50%;
+    height: 694px;
+    background-image:
+      linear-gradient(rgba($main-color, 0.85), rgba($main-color, 0.85)),
+      url("../img/background/cat-tongue-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media (max-width: 1279px) {
+      display: none;
+    }
+  }
 }

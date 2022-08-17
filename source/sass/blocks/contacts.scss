@@ -1,10 +1,22 @@
 @use "../global/variables.scss"  as *;
+@use "../global/viewports.scss" as *;
 
 .contacts {
+  display: flex;
+  justify-content: space-between;
   padding: 26px 20px;
 
   &--additional {
     background-color: $contrast-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 80px;
+    padding-left: 80px;
   }
 }
 
