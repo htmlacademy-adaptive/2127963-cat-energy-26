@@ -1,6 +1,6 @@
 @use "../global/viewports.scss" as *;
 
-.main-container {
+/*.main-container {
   &--form {
     padding: 27px 20px 32px;
   }
@@ -8,13 +8,14 @@
   &--catalog {
     padding: 27px 20px 35px;
   }
-}
+}*/
 
 .main-container__title {
   margin: 0;
   margin-bottom: 37px;
 
   &--catalog {
+    width: 320px;
     margin-bottom: 41px;
   }
 }

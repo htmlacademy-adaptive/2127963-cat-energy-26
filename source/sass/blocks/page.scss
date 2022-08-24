@@ -15,7 +15,9 @@
   font-size: 16px;
   line-height: 20px;
   color: $main-text-color;
+}
 
+.page__body--index {
   &::before {
     position: absolute;
     right: 0;
