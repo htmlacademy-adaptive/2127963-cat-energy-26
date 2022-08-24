@@ -1,0 +1,14 @@
+@use "../global/viewports.scss" as *;
+
+.additional-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 81px;
+  }
+}
