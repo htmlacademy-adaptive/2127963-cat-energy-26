@@ -1,4 +1,5 @@
 @use "../global/mixins.scss" as *;
+@use "../global/viewports.scss" as *;
 
 .additional-products__title {
   margin: 0;
@@ -8,4 +9,10 @@
 
 .additional-products__list {
   @include reset-list;
+}
+
+.additional-products__present {
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
 }

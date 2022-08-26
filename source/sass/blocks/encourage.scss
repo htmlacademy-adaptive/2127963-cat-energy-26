@@ -1,13 +1,15 @@
 @use "../global/variables.scss"  as *;
+@use "../global/viewports.scss" as *;
 
 .encourage {
+  position: relative;
   padding-top: 27px;
-  padding-bottom: 164px;
+  padding-bottom: 20px;
   color: $contrast-color;
   text-align: center;
-  background-image:
-    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/background/cat-tongue.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    color: $main-text-color;
+    text-align: left;
+  }
 }

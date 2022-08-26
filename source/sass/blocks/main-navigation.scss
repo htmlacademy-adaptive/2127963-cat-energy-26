@@ -1,4 +1,12 @@
+@use "../global/viewports.scss" as *;
+
 .main-navigation__list {
   margin: 0;
   padding: 0;
+}
+
+.main-navigation__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -1,19 +1,14 @@
-@use "../global/mixins.scss" as *;
 @use "../global/viewports.scss" as *;
 
-.product-cards__list {
+.additional-list {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 60px;
-    row-gap: 141px;
+    column-gap: 61px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
-    row-gap: 143px;
+    column-gap: 81px;
   }
-
-  @include reset-list;
 }

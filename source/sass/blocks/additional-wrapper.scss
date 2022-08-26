@@ -1,0 +1,7 @@
+@use "../global/viewports.scss" as *;
+
+.additional-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}

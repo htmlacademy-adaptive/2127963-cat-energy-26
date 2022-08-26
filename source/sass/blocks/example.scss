@@ -1,24 +1,96 @@
 @use "../global/variables.scss" as *;
+@use "../global/viewports.scss" as *;
 
 .example {
   padding: 25px 20px 40px 20px;
   background-color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 30px 101px 30px;
+    background-image: linear-gradient($contrast-color 619px, $secondary-color 619px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+    background-image: linear-gradient($contrast-color 179px, $secondary-color 179px);
+  }
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .example__title {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__description {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    padding-right: 784px;
+  }
+}
+
+.example__stats-wrapper {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+    display: flex;
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .example__stats-list {
   margin: 0;
+  display: flex;
+
+  @media (max-width: ($tablet-width - 1)) {
+    justify-content: space-between;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.example__weight {
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+  }
 }
 
 .example__stats-number {
@@ -37,8 +109,29 @@
 }
 
 .example__cost {
+  display: flex;
   margin: 0;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (max-width: ($tablet-width - 1)) {
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+  }
+}
+
+.example__cost-description {
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+  }
+}
+
+.example__cost-number {
+  margin: 0;
 }

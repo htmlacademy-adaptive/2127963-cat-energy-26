@@ -1,0 +1,9 @@
+@use "../global/viewports.scss" as *;
+
+.program-types {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
