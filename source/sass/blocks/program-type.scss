@@ -2,12 +2,12 @@
 @use "../global/viewports.scss" as *;
 
 .program-type {
-  width: 227px;
+  /*width: 227px;*/
   padding: 30px 33px 22px 20px;
   background-color: $basic-color;
 
   @media (min-width: $tablet-width) {
-    width: 340px;
+    /*width: 340px;*/
     padding: 77px 316px 57px 52px;
   }
 

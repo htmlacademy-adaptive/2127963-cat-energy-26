@@ -1,8 +1,21 @@
-.main-header {
+@use "../global/viewports.scss" as *;
+
+.main-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    /*width: 708px;*/
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }

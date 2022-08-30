@@ -7,13 +7,17 @@
 
 .main-footer__wrapper {
   margin: 0 auto;
-  width: 280px;
+  padding-right: 20px;
+  padding-left: 20px;
+  /*width: 280px;*/
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    /*width: 708px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
