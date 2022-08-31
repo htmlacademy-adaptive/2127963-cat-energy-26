@@ -9,33 +9,35 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header section-wrapper">
-    <div class="main-header__logo">
-      <a class="main-header__logo-picture" href="index.html">
-        <img class="main-header__logo-picture-image" src="img/logo/logo-mobile.svg" width="34" height="38"
-          alt="Логотип Кэт энерджи.">
-      </a>
-      <a class="main-header__logo-text" href="index.html">
-        <img class="main-header__logo-text-image" src="img/logo/logo-text.svg" width="101" height="18"
-          alt="Логотип Кэт энерджи.">
-      </a>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <div class="main-header__logo">
+        <a class="main-header__logo-picture" href="index.html">
+          <img class="main-header__logo-picture-image" src="img/logo/logo-mobile.svg" width="34" height="38"
+            alt="Логотип Кэт энерджи.">
+        </a>
+        <a class="main-header__logo-text" href="index.html">
+          <img class="main-header__logo-text-image" src="img/logo/logo-text.svg" width="101" height="18"
+            alt="Логотип Кэт энерджи.">
+        </a>
+      </div>
+      <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="main-navigation__list site-navigation">
+          <li class="site-navigation__item site-navigation__index">
+            <a class="site-navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-navigation__item site-navigation__catalog">
+            <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item--current site-navigation__form">
+            <a class="site-navigation__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-header__navigation main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-      <ul class="main-navigation__list site-navigation">
-        <li class="site-navigation__item site-navigation__main">
-          <a class="site-navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-navigation__item site-navigation__catalog">
-          <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-navigation__item site-navigation__item--current site-navigation__form">
-          <a class="site-navigation__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="main-container main-container--form section-wrapper">
@@ -221,6 +223,7 @@
       </section>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
