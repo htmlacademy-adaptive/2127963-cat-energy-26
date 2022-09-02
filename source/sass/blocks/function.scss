@@ -4,7 +4,7 @@
 
 .function {
   padding-top: 20px;
-  padding-bottom: 49px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
@@ -19,7 +19,7 @@
 
 .function__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 29px;
 }
 
 .function__list {
@@ -27,8 +27,28 @@
 }
 
 .function__item {
+  padding: 13px 0 13px 80px;
+  min-height: 60px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special-color;
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+
+  &--leaf {
+    background-image: url("../img/background/leaf.svg");
+  }
+
+  &--water {
+    background-image: url("../img/background/water.svg");
+  }
+
+  &--fork {
+    background-image: url("../img/background/fork.svg");
+  }
+
+  &--clock {
+    background-image: url("../img/background/clock.svg");
+  }
 }

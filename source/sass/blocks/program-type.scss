@@ -3,8 +3,65 @@
 
 .program-type {
   /*width: 227px;*/
-  padding: 30px 33px 22px 20px;
+  position: relative;
+  padding: 30px 28px 22px 20px;
   background-color: $basic-color;
+
+  &--slim {
+    background-image: url("../img/background/cat-sitting.svg");
+    background-repeat: no-repeat;
+    background-position: 22px 21px;
+
+    @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+      background-image: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 52px 41px;
+    }
+  }
+
+  &--slim::before {
+    @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+      position: absolute;
+      right: 81px;
+      top: 62px;
+      width: 200px;
+      height: 211px;
+      content: "";
+      background-image: url("../img/background/cat-sitting.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--pro {
+    background-image: url("../img/background/cat-walking.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 24px;
+
+    @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+      background-image: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 33px 47px;
+    }
+  }
+
+  &--pro::before {
+    @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
+      position: absolute;
+      right: 27px;
+      top: 91px;
+      width: 268px;
+      height: 200px;
+      content: "";
+      background-image: url("../img/background/cat-walking.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     /*width: 340px;*/
@@ -20,9 +77,22 @@
 .program-type__title {
   margin: 0;
   margin-bottom: 29px;
+  padding-left: 71px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
 }
 
 .program-type__description {
@@ -32,6 +102,12 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .program-type__link {
@@ -39,4 +115,22 @@
   text-align: center;
   text-transform: uppercase;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-type__arrow {
+  position: relative;
+  left: 15px;
+
+  &--pro {
+    left: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 25px;
+  }
 }
