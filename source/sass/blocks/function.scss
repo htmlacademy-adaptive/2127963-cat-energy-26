@@ -20,13 +20,22 @@
 .function__title {
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .function__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    counter-reset: function-counter;
+  }
 }
 
 .function__item {
+  position: relative;
   padding: 13px 0 13px 80px;
   min-height: 60px;
   font-family: "Arial", sans-serif;
@@ -35,6 +44,30 @@
   color: $special-color;
   background-repeat: no-repeat;
   background-position: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 0 40px;
+    font-size: 16px;
+    line-height: 24px;
+    counter-increment: function-counter;
+
+    &::before {
+      font-family: "Oswald", "Arial", sans-serif;
+      width: 136px;
+      content: counter(function-counter);
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-color;
+      right: 32px;
+      top: 0;
+      z-index: -1;
+
+      @media (min-width: $tablet-width) {
+        right: 0;
+      }
+    }
+  }
 
   &--leaf {
     background-image: url("../img/background/leaf.svg");
@@ -50,5 +83,9 @@
 
   &--clock {
     background-image: url("../img/background/clock.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 151px 0 57px;
   }
 }
