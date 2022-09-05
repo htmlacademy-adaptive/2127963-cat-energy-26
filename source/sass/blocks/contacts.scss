@@ -11,14 +11,12 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 26px 20px;
   /*width: 280px;*/
 
   @media (min-width: $tablet-width) {
     /*width: 708px;*/
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 60px 30px 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,6 +27,14 @@
 .contacts__cooperation {
   margin: 0;
   color: $additional-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    min-width: 172px;
+    max-width: 200px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
@@ -36,9 +42,22 @@
   font-size: 14px;
   color: $special-color;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    font-size: 16px;
+  }
 }
 
-.contacts__address-text {
+.contacts__address-street {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__address-city {
   margin: 0;
 }
 

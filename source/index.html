@@ -91,11 +91,11 @@
           <dl class="example__stats-list">
             <div class="example__stats-item example__stats-item--weight">
               <dt class="example__stats-number">5 кг</dt>
-              <dd class="example__stats-desription">Снижение веса</dd>
+              <dd class="example__stats-desription">Снижение <br>веса</dd>
             </div>
             <div class="example__stats-item example__stats-item--time">
               <dt class="example__stats-number">60 дней</dt>
-              <dd class="example__stats-desription example__stats-desription--time">Затрачено времени</dd>
+              <dd class="example__stats-desription example__stats-desription--time">Затрачено <br>времени</dd>
             </div>
           </dl>
           <dl class="example__cost">
@@ -105,14 +105,16 @@
         </div>
         <section class="example__gallery gallery">
           <h3 class="visually-hidden">Фото до и после</h3>
-          <img src="img/cat-before-mobile.png" width="280" height="232" alt="Было.">
-          <img src="img/cat-after-mobile.png" width="243" height="232" alt="Стало.">
-          <button class="gallery__button button button--gallery" type="button">
-            <span class="visually-hidden">Было.</span>
-          </button>
-          <button class="gallery__button button button--gallery" type="button">
+          <img class="gallery__image gallery__image--before" src="img/cat-before-mobile.png" width="280" height="256" alt="Было.">
+          <img class="gallery__image gallery__image--after" src="img/cat-after-mobile.png" width="280" height="256" alt="Стало.">
+          <div class="gallery__range-toggle">
+            <button class="gallery__button button button--gallery" type="button">
+              <span class="visually-hidden">Было / Стало.</span>
+            </button>
+          </div>
+          <!--<button class="gallery__button button button--gallery" type="button">
             <span class="visually-hidden">Стало.</span>
-          </button>
+          </button>-->
         </section>
       </div>
     </section>
@@ -122,9 +124,10 @@
     <section class="main-footer__contacts contacts contacts--additional">
       <h3 class="visually-hidden">Адрес</h3>
       <div class="contacts__wrapper">
-        <p class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__cooperation">Приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="contacts__address">
-          <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__address-city">Санкт-Петербург</p>
         </address>
       </div>
       <div class="contacts__map">
