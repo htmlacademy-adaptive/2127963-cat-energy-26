@@ -10,12 +10,16 @@
 }
 
 .information-form__group {
+  margin: 0;
+  margin-bottom: 24px;
   padding: 0;
   border: none;
 }
 
 .information-form__title {
+  margin: 0;
   margin-bottom: 35px;
+  padding: 0;
   font-size: 24px;
   line-height: 26px;
 
@@ -33,21 +37,93 @@
 }
 
 .information-form__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special-color;
 
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
   &--program {
     color: $special-modified-color;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 
   &--additional {
     color: $main-text-color;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
   }
 }
 
+.information-form__control {
+  position: relative;
+  display: block;
+  padding-left: 46px;
+  line-height: 18px;
+
+  &--program {
+    padding-left: 45px;
+  }
+}
+
+.information-form__control-mark {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-color3;
+
+  &--program {
+    border-radius: 50%;
+  }
+}
+
+.information-form__value {
+  &--radio:checked + .information-form__control-mark::before {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    background-color: $main-color;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &:checked:disabled + .information-form__control-mark::before {
+    background-color: rgba($main-color, 0.3);
+  }
+
+  &:hover + .information-form__control-mark {
+    border: 1px solid $special-color4;
+  }
+
+  &:disabled + .information-form__control-mark {
+    border: 1px solid rgba($special-color3, 0.3);
+  }
+}
+
+.information-form__description {
+  margin-right: 12px;
+}
+
 .information-form__field {
+  position: relative;
+  flex-grow: 1;
+  /*box-sizing: border-box;*/
+  padding: 13px 16px 14px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -55,9 +131,65 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-color;
+  -moz-appearance: textfield;
+
+  &--email {
+    padding-right: 51px;
+    padding-left: 15px;
+  }
+
+  &--phone {
+    padding-right: 51px;
+  }
+
+  &::placeholder {
+    color: $special-color;
+    opacity: 1;
+  }
+
+  &:hover {
+    outline: 1px solid $special-color3;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    border: 2px solid $special-color;
+  }
+
+  &:focus + .information-form__icon {
+    color: $main-color;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &::-moz-outer-spin-button,
+  &::-moz-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+.information-form__icon {
+  position: absolute;
+  right: 32px;
+}
+
+.information-form__comment-container {
+  display: flex;
+  justify-content: center;
 }
 
 .information-form__comment-field {
+  flex-grow: 1;
+  margin: 0;
+  padding: 9px 12px 9px 15px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -65,6 +197,24 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-color;
+  border: 1px solid $special-color5;
+
+  &::placeholder {
+    color: $special-color;
+    opacity: 1;
+  }
+
+  &:hover {
+    outline: 1px solid $special-color3;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    border: 2px solid $special-color;
+  }
 }
 
 .information-form__legend {
