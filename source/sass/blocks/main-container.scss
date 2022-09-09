@@ -7,4 +7,14 @@
   &--catalog {
     margin-bottom: 41px;
   }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 56px;
+    }
+  }
 }

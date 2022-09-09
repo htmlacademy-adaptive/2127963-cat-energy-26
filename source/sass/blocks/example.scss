@@ -17,6 +17,7 @@
 }
 
 .example__wrapper {
+  position: relative;
   margin: 0 auto;
   /*width: 280px;*/
 
@@ -199,11 +200,14 @@
 }
 
 .example__gallery {
+  position: absolute;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
-    margin-top: -256px;
+    right: 0;
+    top: 0;
+    /*margin-right: 0;
+    margin-top: -256px;*/
     /*margin-top: -512px; сделать после адаптации картинкк*/
   }
 }
