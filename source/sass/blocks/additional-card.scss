@@ -1,17 +1,27 @@
 @use "../global/variables.scss" as *;
 
+.additional-card {
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
 .additional-card__link {
   text-decoration: none;
 }
 
 .additional-card__title {
   margin: 0;
+  margin-bottom: 13px;
   line-height: 16px;
   text-transform: uppercase;
   color: $special-modified-color;
 }
 
 .additional-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;

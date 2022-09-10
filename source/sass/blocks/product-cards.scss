@@ -17,3 +17,7 @@
 
   @include reset-list;
 }
+
+.product-cards__item:not(:last-child) {
+  margin-bottom: 8px;
+}

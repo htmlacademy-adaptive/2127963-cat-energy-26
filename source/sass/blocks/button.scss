@@ -14,12 +14,22 @@
   cursor: pointer;
 
   &--additional {
+    padding-top: 59px;
     color: $additional-color;
     background-color: $contrast-color;
   }
 
-  &--basic {
+  &--all {
+    display: block;
+    padding: 10px;
     color: $special-color;
     background-color: $basic-color;
   }
+
+  &--buy {
+    display: block;
+    padding: 10px;
+  }
+
+
 }

@@ -1,17 +1,30 @@
 @use "../global/mixins.scss" as *;
 @use "../global/viewports.scss" as *;
+@use "../global/variables.scss" as *;
 
 .additional-products__title {
   margin: 0;
+  margin-bottom: 36px;
   font-size: 24px;
   line-height: 24px;
 }
 
 .additional-products__list {
   @include reset-list;
+  margin-bottom: 35px;
+}
+
+.additional-products__item {
+  border-bottom: 1px solid $special-color3;
+
+  &:first-child {
+    border-top: 1px solid $special-color3;
+  }
 }
 
 .additional-products__present {
+  margin-bottom: 35px;
+
   @media (min-width: $desktop-width) {
     margin-left: auto;
   }
