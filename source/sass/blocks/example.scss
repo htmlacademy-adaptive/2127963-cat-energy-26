@@ -200,10 +200,10 @@
 }
 
 .example__gallery {
-  position: absolute;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     right: 0;
     top: 0;
     /*margin-right: 0;

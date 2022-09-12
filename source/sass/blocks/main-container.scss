@@ -6,6 +6,14 @@
 
   &--catalog {
     margin-bottom: 41px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 163px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 165px;
+    }
   }
 
   &--form {
@@ -20,4 +28,18 @@
 }
 .main-container__cards {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
+.main-container__additional {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+  }
 }

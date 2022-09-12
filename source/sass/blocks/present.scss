@@ -1,17 +1,39 @@
 @use "../global/variables.scss" as *;
+@use "../global/viewports.scss" as *;
 
 .present {
   padding: 187px 61px 43px 58px;
   font-family: "Arial", sans-serif;
   color: $contrast-color;
   text-align: center;
-  background-image:
+  background-image: url("../img/background/gift.svg"),
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../img/background/cat-bag.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto, cover, cover;
+  background-position: 50% 59px, 0 0, 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 124px 69px 422px;
+    background-position: 77px 50%, 0 0, 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 21%;
+    box-sizing: border-box;
+    padding: 185px 43px 42px 41px;
+    background-position: 50% 56px, 0 0, 0 0;
+  }
 }
 
 .present__text {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

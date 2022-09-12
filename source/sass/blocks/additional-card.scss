@@ -1,8 +1,35 @@
 @use "../global/variables.scss" as *;
+@use "../global/viewports.scss" as *;
 
 .additional-card {
   padding-top: 13px;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 17px
+  }
+}
+
+.additional-card__info-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+    flex-grow: 1;
+    margin-bottom: 0;
+    margin-right: 38px;
+  }
 }
 
 .additional-card__link {
@@ -15,6 +42,12 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $special-modified-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-card__info {
@@ -26,9 +59,31 @@
   font-size: 14px;
   line-height: 14px;
   color: $special-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.additional-card__characteristic {
+    @media (min-width: $desktop-width) {
+      min-width: 132px;
+      text-align: left;
+  }
 }
 
 .additional-card__price {
   text-transform: uppercase;
   text-align: right;
+
+  @media (min-width: $desktop-width) {
+    min-width: 44px;
+    text-align: left;
+  }
 }

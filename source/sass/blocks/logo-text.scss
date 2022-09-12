@@ -1,0 +1,15 @@
+@use "../global/viewports.scss" as *;
+
+.logo-text {
+  padding-top: 39px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 63px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 62px;
+  }
+}

@@ -2,11 +2,14 @@
 @use "../global/viewports.scss" as *;
 
 .product-cards__list {
+  @include reset-list;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
     row-gap: 141px;
+    align-items: stretch;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,10 +17,12 @@
     column-gap: 80px;
     row-gap: 143px;
   }
-
-  @include reset-list;
 }
 
 .product-cards__item:not(:last-child) {
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
