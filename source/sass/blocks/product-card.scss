@@ -29,7 +29,7 @@
     background-color: $contrast-color;
 
     @media (min-width: $tablet-width) {
-      padding-top: 0px;
+      padding-top: 0;
       border: 2px solid $basic-color;
     }
   }

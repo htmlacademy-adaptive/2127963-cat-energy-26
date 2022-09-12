@@ -133,6 +133,7 @@
 }
 
 .information-form__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -286,7 +287,9 @@
   text-transform: uppercase;
   color: $special-color;
   border: 1px solid $special-color5;
+  /* stylelint-disable */
   -moz-appearance: textfield;
+  /* stylelint-enable */
 
   @media (min-width: $tablet-width) {
     padding: 10px 19px 12px;
@@ -360,10 +363,10 @@
 
 .information-form__icon {
   position: absolute;
-  right: 32px;
+  right: 14px;
 
   @media (min-width: $tablet-width) {
-    right: 53px;
+    right: 18px;
   }
 }
 
