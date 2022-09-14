@@ -2,27 +2,66 @@
 @use "../global/viewports.scss" as *;
 @use "../global/variables.scss" as *;
 
+.additional-products__title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: $main-color;
+    z-index: -1;
+  }
+}
+
+.additional-products__title-inner-wrapper {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+  }
+}
+
 .additional-products__title {
   margin: 0;
   margin-bottom: 36px;
+  width: fit-content;
+  padding-left: 19px;
+  padding-right: 22px;
   font-size: 24px;
   line-height: 24px;
+  background-color: $contrast-color;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+    margin-left: 40px;
+    padding-left: 37px;
+    padding-right: 36px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 81px;
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 35px;
   }
 }
 
 .additional-products__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    width: 1220px;
   }
 }
 

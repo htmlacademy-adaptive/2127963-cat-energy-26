@@ -5,29 +5,42 @@
   margin-bottom: 37px;
 
   &--catalog {
+    margin: 0 auto;
     margin-bottom: 41px;
+    padding: 0 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 163px;
+      padding: 0 30px;
     }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 165px;
+      width: 1220px;
     }
   }
 
   &--form {
+    padding: 0 20px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 54px;
+      padding-right: 67px;
+      padding-left: 69px;
     }
 
     @media (min-width: $desktop-width) {
+      margin: 0 auto;
       margin-bottom: 56px;
+      padding-right: 30px;
+      padding-left: 30px;
+      width: 1220px;
     }
   }
 }
 
 .main-container__cards {
+  margin: 0 auto;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {

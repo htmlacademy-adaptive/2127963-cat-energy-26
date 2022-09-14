@@ -9,8 +9,7 @@
     "order order";
   row-gap: 13px;
   align-items: center;
-  padding-top: 19px;
-  padding-bottom: 25px;
+  padding: 19px 20px 25px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -24,13 +23,55 @@
   }
 
   &--more {
+    position: relative;
     display: block;
+    padding-top: 78px;
     text-align: center;
     background-color: $contrast-color;
 
     @media (min-width: $tablet-width) {
       padding-top: 0;
       border: 2px solid $basic-color;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 2px;
+      top: 39px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: $plus-color;
+
+      @media (min-width: $tablet-width) {
+        width: 60px;
+        top: 82px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 81px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 30px;
+      top: 25px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: $plus-color;
+
+      @media (min-width: $tablet-width) {
+        height: 60px;
+        top: 52px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 51px;
+      }
     }
   }
 }
