@@ -2,13 +2,51 @@
 
 .section-wrapper {
   margin: 0 auto;
-  width: 280px;
+  /**width: 280px;*/
+  padding: 27px 20px 0;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  /*@media (min-width: $desktop-width) {
     width: 1220px;
+  }*/
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+    }
+  }
+
+  &--program {
+    padding-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 526px;
+    }
+  }
+
+  &--form {
+    padding-bottom: 32px;
+    padding-right: 0;
+    padding-left: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 28px;
+      padding-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 40px;
+      padding-bottom: 82px;
+    }
+  }
+
+  &--catalog {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

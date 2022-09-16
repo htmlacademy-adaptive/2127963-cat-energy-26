@@ -1,8 +1,27 @@
 @use "../global/mixins.scss" as *;
+@use "../global/variables.scss" as *;
+@use "../global/viewports.scss" as *;
+
+.social {
+  padding-top: 20px;
+  padding-bottom: 21px;
+  border-top: 1px solid $special-color7;
+  border-bottom: 1px solid $special-color7;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 56px;
+    border: none;
+  }
+}
 
 .social__list {
+  @include reset-list;
+
   display: flex;
   justify-content: center;
+}
 
-  @include reset-list;
+.social__link {
+  padding: 20px 13px 21px;
 }

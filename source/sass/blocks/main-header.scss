@@ -1,8 +1,33 @@
-.main-header {
+@use "../global/viewports.scss" as *;
+
+.main-header__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  /*padding-left: 20px;*/
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    /*width: 708px;*/
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+  }
+}
+
+.main-header__logo {
+  @media (max-width: $mobile-width-only) {
+    padding-right: 92px;
+    padding-left: 92px;
+    display: flex;
+    align-items: center;
+  }
 }

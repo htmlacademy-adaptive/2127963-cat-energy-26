@@ -1,8 +1,10 @@
 @use "../global/variables.scss"  as *;
+@use "../global/viewports.scss" as *;
 
 .button {
   display: inline-block;
   box-sizing: border-box;
+  padding: 7px;
   font-family: "Oswald", "Arial", sans-serif;
   color: $contrast-color;
   text-transform: uppercase;
@@ -12,13 +14,65 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    color: rgba($contrast-color, 0.3);
+    background-color: $hover-color;
+  }
+
   &--additional {
     color: $additional-color;
     background-color: $contrast-color;
+
+    @media (min-width: $tablet-width) {
+      padding: 161px 55px 0;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 160px 0 0;
+    }
+
+    &:hover {
+      background-color: $contrast-color;
+    }
+
+    &:active {
+      color: rgba($additional-color, 0.3);
+      background-color: $contrast-color;
+    }
   }
 
-  &--basic {
+  &--all {
+    display: block;
+    padding: 10px;
     color: $special-color;
     background-color: $basic-color;
+
+    &:hover {
+      background-color: $special-color6;
+    }
+
+    &:active {
+      color: rgba($special-color, 0.3);
+      background-color: $special-color6;
+    }
+  }
+
+  &--buy {
+    display: block;
+    padding: 10px;
+  }
+
+  &--buy-additional {
+    @media (min-width: $desktop-width) {
+      width: 244px;
+      padding-right: 26px;
+      padding-left: 26px;
+    }
   }
 }

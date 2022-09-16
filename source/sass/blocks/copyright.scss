@@ -1,0 +1,15 @@
+@use "../global/viewports.scss" as *;
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.copyright__logo-text {
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+}

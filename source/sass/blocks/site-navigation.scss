@@ -1,10 +1,12 @@
 @use "../global/viewports.scss" as *;
+@use "../global/variables.scss" as *;
 
 .site-navigation {
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     min-width: 440px;
     max-width: 440px + 70;
@@ -18,14 +20,103 @@
 
 .site-navigation__item {
   text-align: center;
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      margin-right: 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 36px;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      margin-right: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 32px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 39px;
+        left: 0;
+        height: 2px;
+        background: $main-color;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--current-index {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 39px;
+        left: 0;
+        height: 2px;
+        background: $contrast-color;
+      }
+    }
+  }
 }
 
 .site-navigation__link {
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
   color: inherit;
   text-decoration: none;
+  border-top: 1px solid $special-color2;
+
+  &:hover {
+    color: rgba($main-text-color, 0.6);
+  }
+
+  &:active {
+    color: rgba($main-text-color, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 47px;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $contrast-color;
+
+      &:hover {
+        color: rgba($contrast-color, 0.6);
+      }
+
+      &:active {
+        color: rgba($contrast-color, 0.3);
+      }
+    }
+  }
 }
 
-.site-navigation__main {
+/*.site-navigation__index {
   @media (min-width: $tablet-width) {
     margin-right: 34px;
   }
@@ -43,4 +134,4 @@
   @media (min-width: $desktop-width) {
     margin-right: 32px;
   }
-}
+}*/
