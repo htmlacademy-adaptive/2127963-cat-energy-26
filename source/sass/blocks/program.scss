@@ -19,6 +19,10 @@
     background-size: cover;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($main-color, 0.85), rgba($main-color, 0.85)), url("../img/background/cat-tongue@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -82,11 +86,13 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;
+    width: 709px;
   }
 
   @media (min-width: $desktop-width) {
     left: 38%;
     bottom: 136px;
+    width: 552px;
   }
 }
 

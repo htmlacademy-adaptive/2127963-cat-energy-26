@@ -92,6 +92,16 @@
   }
 }
 
+.product-card__image {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+  }
+}
+
 .product-card__info-wrapper {
   grid-area: info;
 }

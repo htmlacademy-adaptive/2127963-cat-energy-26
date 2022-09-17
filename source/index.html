@@ -13,8 +13,12 @@
     <div class="main-header__wrapper">
       <div class="main-header__logo">
         <a class="main-header__logo-picture">
-          <img class="main-header__logo-picture-image" src="img/logo/logo-mobile.svg" width="34" height="38"
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="main-header__logo-picture-image" src="img/logo/logo-mobile.svg" width="34" height="38"
             alt="Логотип Кэт энерджи.">
+          </picture>
         </a>
         <a class="main-header__logo-text">
           <img class="main-header__logo-text-image" src="img/logo/logo-text.svg" width="101" height="18"
@@ -52,7 +56,7 @@
         <picture>
           <source media="(min-width: 1280px)" srcset="img/index/can-desktop.png 1x, img/index/can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index/can-tablet.png 1x, img/index/can-tablet@2x.png 2x">
-          <img class="program__image" src="img/index/can-mobile.png" width="280" height="270" srcset="can-mobile@2x.png 2x"
+          <img class="program__image" src="img/index/can-mobile.png" width="280" height="270" srcset="img/index/can-mobile@2x.png 2x"
           alt="Упаковка с питанием Кэт энерджи.">
 
         </picture>
@@ -126,10 +130,20 @@
         </div>
         <section class="example__gallery gallery">
           <h3 class="visually-hidden">Фото до и после</h3>
-          <img class="gallery__image gallery__image--before" src="img/cat-before-mobile.png" width="280" height="256"
-            alt="Было.">
-          <img class="gallery__image gallery__image--after" src="img/cat-after-mobile.png" width="280" height="256"
-            alt="Стало.">
+          <div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index/cat-before-tablet.png 1x, img/index/cat-before-tablet@2x.png 2x">
+              <img class="gallery__image gallery__image--before" src="img/index/cat-before.png" width="280" height="256" srcset="img/index/cat-before@2x.png 2x"
+              alt="Было.">
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index/cat-after-tablet.png 1x, img/index/cat-after-tablet@2x.png 2x">
+              <img class="gallery__image gallery__image--after" src="img/index/cat-after.png" width="280" height="256" srcset="img/index/cat-after@2x.png 2x"
+              alt="Стало.">
+            </picture>
+          </div>
           <div class="gallery__range-toggle">
             <button class="gallery__button button button--gallery" type="button">
               <span class="visually-hidden">Было / Стало.</span>

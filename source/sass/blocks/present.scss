@@ -6,23 +6,39 @@
   font-family: "Arial", sans-serif;
   color: $contrast-color;
   text-align: center;
-  background-image: url("../img/background/gift.svg"),
-    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/background/cat-bag.jpg");
+  background-image: url("../img/background/gift.svg"), linear-gradient(rgba($main-color, 0.85), rgba($main-color, 0.85)), url("../img/background/cat-bag.jpg");
   background-repeat: no-repeat;
   background-size: auto, cover, cover;
   background-position: 50% 59px, 0 0, 0 0;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/gift.svg"), linear-gradient(rgba($main-color, 0.85), rgba($main-color, 0.85)), url("../img/background/cat-bag@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 71px 124px 69px 422px;
+    background-image: url("../img/background/gift.svg"),
+      linear-gradient(rgba($main-color, 0.85), rgba($main-color, 0.85)),
+      url("../img/background/cat-bag-tablet.jpg");
     background-position: 77px 50%, 0 0, 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift.svg"), linear-gradient(rgba($main-color, 0.85), rgba($main-color, 0.85)), url("../img/background/cat-bag-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 21%;
     box-sizing: border-box;
     padding: 185px 43px 42px 41px;
+    background-image: url("../img/background/gift.svg"),
+      linear-gradient(rgba($main-color, 0.85), rgba($main-color, 0.85)),
+      url("../img/background/cat-bag-desktop.jpg");
     background-position: 50% 56px, 0 0, 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift.svg"), linear-gradient(rgba($main-color, 0.85), rgba($main-color, 0.85)), url("../img/background/cat-bag-desktop@2x.jpg");
+    }
   }
 }
 

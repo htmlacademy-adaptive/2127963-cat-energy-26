@@ -13,8 +13,12 @@
     <div class="main-header__wrapper">
       <div class="main-header__logo">
         <a class="main-header__logo-picture" href="index.html">
-          <img class="main-header__logo-picture-image" src="img/logo/logo-mobile.svg" width="34" height="38"
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="main-header__logo-picture-image" src="img/logo/logo-mobile.svg" width="34" height="38"
             alt="Логотип Кэт энерджи.">
+          </picture>
         </a>
         <a class="main-header__logo-text" href="index.html">
           <img class="main-header__logo-text-image" src="img/logo/logo-text.svg" width="101" height="18"
