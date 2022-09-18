@@ -29,4 +29,14 @@
 .main-footer__logo {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 400px;
+  }
+}
+
+.main-footer__copyright {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }

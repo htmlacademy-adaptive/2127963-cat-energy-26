@@ -76,6 +76,10 @@
   background-color: $gallery-range-color;
   z-index: 2;
 
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+
   &:hover {
     background-color: $main-color;
 

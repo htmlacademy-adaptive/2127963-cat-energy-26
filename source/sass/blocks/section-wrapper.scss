@@ -27,6 +27,11 @@
     @media (min-width: $tablet-width) {
       padding-bottom: 526px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 109px;
+      padding-bottom: 240px;
+    }
   }
 
   &--form {

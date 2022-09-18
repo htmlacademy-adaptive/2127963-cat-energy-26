@@ -1,5 +1,9 @@
 @use "../global/viewports.scss" as *;
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-container__title {
   margin: 0;
   margin-bottom: 37px;
@@ -36,6 +40,12 @@
       padding-left: 30px;
       width: 1220px;
     }
+  }
+}
+
+.main-container__program {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
   }
 }
 
