@@ -70,6 +70,7 @@
   @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
     display: flex;
     margin-bottom: 104px;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -148,7 +149,7 @@
     margin-bottom: -45px;
     font-size: 14px;
     line-height: 14px;
-    padding: 16px 9px 20px 8px;
+    padding: 14px 9px 20px 8px;
     background-color: $contrast-color;
 
     &--time {
@@ -191,13 +192,26 @@
 }
 
 .example__cost-description {
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 63px;
+    padding-top: 0;
   }
 }
 
 .example__cost-number {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .example__gallery {

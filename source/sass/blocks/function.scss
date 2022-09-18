@@ -47,6 +47,7 @@
 
   @media (min-width: $tablet-width) {
     background-position: 0 40px;
+    padding: 151px 35px 57px 0;
     font-size: 16px;
     line-height: 24px;
     counter-increment: function-counter;
@@ -59,11 +60,11 @@
       font-size: 280px;
       line-height: 280px;
       color: $basic-color;
-      right: 32px;
+      right: 73px;
       top: 0;
       z-index: -1;
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $desktop-width) {
         right: -4px;
       }
     }
@@ -71,14 +72,26 @@
 
   &--leaf {
     background-image: url("../img/background/leaf.svg");
+
+    @media (min-width: $tablet-width) {
+      padding-right: 79px;
+    }
   }
 
   &--water {
     background-image: url("../img/background/water.svg");
+
+    @media (min-width: $tablet-width) {
+      padding-right: 53px;
+    }
   }
 
   &--fork {
     background-image: url("../img/background/fork.svg");
+
+    @media (min-width: $tablet-width) {
+      padding-right: 71px;
+    }
   }
 
   &--clock {
@@ -91,7 +104,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 151px 0 57px;
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }

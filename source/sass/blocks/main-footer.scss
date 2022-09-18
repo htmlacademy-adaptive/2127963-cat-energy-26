@@ -30,6 +30,10 @@
   display: flex;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 141px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 400px;
   }

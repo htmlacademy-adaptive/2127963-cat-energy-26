@@ -13,15 +13,19 @@
   @media (min-width: $tablet-width) {
     /*width: 708px;*/
     justify-content: space-between;
+    padding-top: 24px;
     padding-right: 30px;
     padding-left: 30px;
     font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     padding-top: 53px;
     width: 1220px;
+    font-size: 20px;
   }
 }
 

@@ -24,8 +24,8 @@
   &--slim::before {
     @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
       position: absolute;
-      right: 81px;
-      top: 62px;
+      right: 62px;
+      top: 78px;
       width: 200px;
       height: 211px;
       content: "";
@@ -52,8 +52,8 @@
   &--pro::before {
     @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
       position: absolute;
-      right: 27px;
-      top: 91px;
+      right: 30px;
+      top: 89px;
       width: 268px;
       height: 200px;
       content: "";
@@ -137,6 +137,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    left: 25px;
+    left: 22px;
+    bottom: 4px;
   }
 }
