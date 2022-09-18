@@ -63,11 +63,11 @@
                 required>
             </li>
             <li class="information-form__item data-item">
-              <label class="information-form__description" for="cat-weight">Вес (кг):*</label>
+              <label class="information-form__description information-form__description--weight" for="cat-weight">Вес (кг):*</label>
               <input class="information-form__field" type="number" value="7" name="cat-weight" id="cat-weight" required>
             </li>
             <li class="information-form__item data-item">
-              <label class="information-form__description" for="cat-age">Возраст (лет):</label>
+              <label class="information-form__description information-form__description--age" for="cat-age">Возраст (лет):</label>
               <input class="information-form__field" type="number" value="7" name="cat-age" id="cat-age">
             </li>
           </ul>
@@ -114,7 +114,7 @@
         <div class="information-form__list-wrapper">
           <ul class="information-form__list information-form__list--owner contacts-list">
             <li class="information-form__item information-form__item--contacts contacts-item">
-              <label class="information-form__description" for="e-mail">E-mail:*</label>
+              <label class="information-form__description information-form__description--email" for="e-mail">E-mail:*</label>
               <input class="information-form__field information-form__field--email" type="email"
                 placeholder="kuklachev@gmail.com" name="e-mail" id="e-mail" required>
               <svg class="information-form__icon information-form__icon--email" aria-hidden="true" focusable="false"
@@ -124,7 +124,7 @@
               </svg>
             </li>
             <li class="information-form__item contacts-item">
-              <label class="information-form__description" for="phone">Телефон:*</label>
+              <label class="information-form__description information-form__description--phone" for="phone">Телефон:*</label>
               <input class="information-form__field information-form__field--phone" type="tel"
                 placeholder="8 (960) 900-60-90" name="phone" id="phone" required>
               <svg class="information-form__icon information-form__icon--phone" aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
           </div>
         </div>
         <div class="information-form__comment-container">
-          <textarea class="information-form__comment-field" name="comment" id="comment-field" rows="8"
+          <textarea class="information-form__comment-field" name="comment" id="comment-field" rows="7"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
@@ -199,7 +199,7 @@
         </ul>
       </fieldset>
       <div class="information-form__additional-container">
-        <button class="information-form__button button" type="submit">Отправить заявку</button>
+        <button class="information-form__button button button--send" type="submit">Отправить заявку</button>
         <p class="information-form__legend">* — Обязательные поля</p>
       </div>
     </form>
