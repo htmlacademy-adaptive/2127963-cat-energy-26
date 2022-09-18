@@ -3,7 +3,7 @@
 .main-header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
   /*padding-left: 20px;*/
   font-weight: 500;
@@ -31,10 +31,19 @@
 
 .main-header__logo {
   @media (max-width: $mobile-width-only) {
-    padding-right: 92px;
-    padding-left: 92px;
+    /*padding-right: 92px;
+    padding-left: 92px;*/
+    padding-left: 20px;
     display: flex;
     align-items: center;
+  }
+}
+
+.main-header__logo-picture {
+  margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 

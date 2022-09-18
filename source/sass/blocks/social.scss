@@ -3,15 +3,41 @@
 @use "../global/viewports.scss" as *;
 
 .social {
+  position: relative;
   padding-top: 20px;
-  padding-bottom: 21px;
-  border-top: 1px solid $special-color7;
-  border-bottom: 1px solid $special-color7;
+  padding-bottom: 20px;
+
+  ::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $special-color7;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  ::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $special-color7;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;
     padding-bottom: 56px;
-    border: none;
   }
 }
 
@@ -23,5 +49,9 @@
 }
 
 .social__link {
-  padding: 20px 14px 21px;
+  padding: 20px 16px 20px 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 14px 21px;
+  }
 }

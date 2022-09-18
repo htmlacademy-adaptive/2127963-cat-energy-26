@@ -75,4 +75,20 @@
       padding-left: 26px;
     }
   }
+
+  &--search {
+    display: block;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+      padding: 14px 26px;
+      font-size: 20px;
+      /*line-height: 20px;*/
+      line-height: 26px;
+      /*min-height: 54px;*/
+    }
+  }
 }

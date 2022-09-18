@@ -93,7 +93,7 @@
 }
 
 .example__stats-item {
-  padding: 14px 19px 17px 18px;
+  padding: 14px 17px 17px 16px;
 
   border: 1px solid $special-color3;
   border-radius: 3px;
@@ -130,8 +130,8 @@
 
 .example__stats-desription {
   margin: 0;
-  margin-top: -3px;
-  padding: 8px 18px 9px 16px;
+  margin-bottom: -42px;
+  padding: 8px 18px 8px 16px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
@@ -149,7 +149,7 @@
     margin-bottom: -45px;
     font-size: 14px;
     line-height: 14px;
-    padding: 14px 9px 20px 8px;
+    padding: 12px 9px 20px 8px;
     background-color: $contrast-color;
 
     &--time {

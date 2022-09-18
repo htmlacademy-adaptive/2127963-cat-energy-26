@@ -19,7 +19,7 @@
 
 .function__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
@@ -36,14 +36,14 @@
 
 .function__item {
   position: relative;
-  padding: 13px 0 13px 80px;
+  padding: 10px 0 10px 80px;
   min-height: 60px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special-color;
   background-repeat: no-repeat;
-  background-position: 0 10px;
+  background-position: 0 9px;
 
   @media (min-width: $tablet-width) {
     background-position: 0 40px;
