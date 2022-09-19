@@ -120,6 +120,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 59px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 65px;
+    }
   }
 }
 
@@ -436,8 +440,18 @@
 .information-form__description {
   margin-right: 12px;
 
+  &--cat-name {
+    @media (min-width: $desktop-width) {
+      margin-right: 13px;
+    }
+  }
+
   &--weight {
     margin-right: 15px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 18px;
+    }
   }
 
   &--age {
@@ -483,6 +497,12 @@
   @media (min-width: $tablet-width) {
     min-height: 52px;
     padding: 10px 19px 12px;
+  }
+
+  &--cat-name {
+    @media (min-width: $desktop-width) {
+      padding-left: 21px;
+    }
   }
 
   &--email {

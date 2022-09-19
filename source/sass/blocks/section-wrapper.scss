@@ -2,7 +2,7 @@
 @use "../global/variables.scss" as *;
 
 .section-wrapper {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   /**width: 280px;*/
   padding: 27px 20px 0;
 
@@ -70,7 +70,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 40px;
+      padding-top: 73px;
       padding-bottom: 82px;
     }
   }
