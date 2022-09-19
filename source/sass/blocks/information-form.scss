@@ -76,6 +76,7 @@
       margin-bottom: 75px;
       padding-right: 67px;
       padding-left: 71px;
+      padding-bottom: 0;
       border: none;
       /*padding: 30px 28px;
       border: 1px solid $special-color5;*/
@@ -221,6 +222,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 76px;
+      padding-right: 38px;
     }
   }
 
@@ -230,6 +232,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 62px;
+      padding-right: 41px;
     }
   }
 
@@ -317,6 +320,10 @@
 
     &:not(:last-child) {
       margin-bottom: 24px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 22px;
+      }
 
       @media (min-width: $desktop-width) {
         margin-bottom: 23px;
@@ -439,10 +446,18 @@
 
   &--email {
     margin-right: 11px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 18px;
+    }
   }
 
   &--phone {
     margin-right: 8px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 14px;
+    }
   }
 }
 
@@ -466,6 +481,7 @@
   /* stylelint-enable */
 
   @media (min-width: $tablet-width) {
+    min-height: 52px;
     padding: 10px 19px 12px;
   }
 
@@ -487,7 +503,7 @@
     @media (min-width: $tablet-width) {
       padding-right: 60px;
       padding-bottom: 10px;
-      padding-left: 21px;
+      padding-left: 20px;
     }
   }
 
@@ -576,7 +592,8 @@
   border: 1px solid $special-color5;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 19px;
+    padding: 10px 19px 9px;
+    min-height: 152px;
   }
 
   &::placeholder {
@@ -641,6 +658,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     column-gap: 61px;
     padding-right: 71px;
     padding-left: 71px;
