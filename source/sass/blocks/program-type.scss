@@ -127,12 +127,19 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  &:hover .program-type__arrow {
+    transform: scaleX(1.4);
+  }
 }
 
 .program-type__arrow {
   position: relative;
   left: 12px;
   bottom: 2px;
+  transform: scaleX(1);
+  transform-origin: center left;
+  transition: transform 0.5s;
 
   &--pro {
     left: 14px;
