@@ -88,7 +88,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 311px;
+    bottom: 315px;
+  }
+}
+
+.product-card__image {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
   }
 }
 
@@ -117,7 +127,6 @@
   color: $special-modified-color;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 21px;
     padding: 0 37px;
     text-align: center;
   }

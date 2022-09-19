@@ -1,4 +1,5 @@
 @use "../global/viewports.scss" as *;
+@use "../global/variables.scss" as *;
 
 .section-wrapper {
   margin: 0 auto;
@@ -21,11 +22,40 @@
     }
   }
 
-  &--program {
+  &--encourage {
     padding-bottom: 20px;
 
     @media (min-width: $tablet-width) {
+      padding-top: 62px;
       padding-bottom: 526px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 109px;
+      padding-bottom: 240px;
+    }
+  }
+
+  &--program {
+    padding-top: 0;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 27px;
+    }
+  }
+
+  &--function {
+    padding-top: 20px;
+    padding-bottom: 39px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 45px;
+      padding-bottom: 47px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 27px;
+      padding-bottom: 0;
     }
   }
 

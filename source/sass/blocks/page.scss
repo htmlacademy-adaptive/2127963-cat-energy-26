@@ -6,7 +6,11 @@
 }
 
 .page__body {
+  /*width: 1440px;*/
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
   min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -31,6 +35,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($main-color, 0.85), rgba($main-color, 0.85)), url("../img/background/cat-tongue-desktop@2x.jpg");
+    }
 
     @media (max-width: ($desktop-width - 1)) {
       display: none;

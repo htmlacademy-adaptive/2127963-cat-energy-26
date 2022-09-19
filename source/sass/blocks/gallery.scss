@@ -2,15 +2,19 @@
 @use "../global/viewports.scss" as *;
 
 .gallery {
-  /*position: relative;*/
   display: flex;
   justify-content: center;
   width: 280px;
   height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .gallery__image {
-  width: 50%;
+  /*width: 50%;*/
   height: 100%;
   object-fit: cover;
 
@@ -20,6 +24,10 @@
 
   &--after {
     object-position: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
   }
 }
 
@@ -67,6 +75,10 @@
   height: 256px;
   background-color: $gallery-range-color;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 
   &:hover {
     background-color: $main-color;

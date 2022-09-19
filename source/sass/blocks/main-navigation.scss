@@ -4,7 +4,10 @@
 .main-navigation {
   /*position: relative;*/
   width: auto;
-  min-height: 66px;
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 66px;
+  }
 }
 
 .main-navigation__list {
@@ -18,8 +21,9 @@
   right: 0;
   z-index: 2;
   display: block;
+  padding: 0;
   width: 64px;
-  height: 66px;
+  height: 65px;
   background-color: $contrast-color;
   cursor: pointer;
   border: none;

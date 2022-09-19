@@ -114,7 +114,7 @@
   }
 
   &--additional {
-    margin-bottom: 41px;
+    margin-bottom: 40px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 59px;
@@ -128,7 +128,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: calc(50% + 3px);
     height: 2px;
     width: 100%;
     background-color: $main-color;
@@ -140,7 +140,7 @@
       &::before {
         content: "";
         position: absolute;
-        top: 25%;
+        top: calc(25% + 4px);
         height: 2px;
         width: 100%;
         background-color: $main-color;
@@ -217,6 +217,7 @@
 
   &--comment {
     margin-bottom: 38px;
+    padding-right: 22px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 76px;
@@ -225,6 +226,7 @@
 
   &--additional {
     margin-bottom: 39px;
+    padding-right: 23px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 62px;
@@ -249,7 +251,7 @@
   @include reset-list;
 
   &--owner {
-    padding: 0 20px 24px;
+    padding: 0 20px;
 
     @media (min-width: $tablet-width) {
       padding-right: 65px;
@@ -426,14 +428,31 @@
 
 .information-form__description {
   margin-right: 12px;
+
+  &--weight {
+    margin-right: 15px;
+  }
+
+  &--age {
+    margin-right: 15px;
+  }
+
+  &--email {
+    margin-right: 11px;
+  }
+
+  &--phone {
+    margin-right: 8px;
+  }
 }
 
 .information-form__field {
   position: relative;
   flex-grow: 1;
   width: 172px;
+  height: 45px;
   box-sizing: border-box;
-  padding: 13px 16px 14px;
+  padding: 13px 16px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -463,6 +482,7 @@
 
   &--phone {
     padding-right: 45px;
+    padding-left: 16px;
 
     @media (min-width: $tablet-width) {
       padding-right: 60px;
@@ -545,7 +565,7 @@
 .information-form__comment-field {
   flex-grow: 1;
   margin: 0;
-  padding: 9px 12px 9px 15px;
+  padding: 9px 12px 13px 15px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

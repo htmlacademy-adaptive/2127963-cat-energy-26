@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,8 +17,12 @@
     <div class="main-header__wrapper">
       <div class="main-header__logo">
         <a class="main-header__logo-picture">
-          <img class="main-header__logo-picture-image" src="img/logo/logo-mobile.svg" width="34" height="38"
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="main-header__logo-picture-image" src="img/logo/logo-mobile.svg" width="34" height="38"
             alt="Логотип Кэт энерджи.">
+          </picture>
         </a>
         <a class="main-header__logo-text">
           <img class="main-header__logo-text-image" src="img/logo/logo-text.svg" width="101" height="18"
@@ -44,16 +52,26 @@
   <main class="main-container">
     <h1 class="visually-hidden">Кэт энерджи - питание для котов</h1>
     <section class="main-container__program program">
-      <header class="program__header encourage section-wrapper section-wrapper--index section-wrapper--program">
-        <h2 class="program__title section-title section-title--modified">Функциональное<br>
-          питание для котов
-        </h2>
-        <p class="program__slogan">Занялся собой? Займись котом!</p>
-        <img class="program__image" src="img/index-can-mobile.png" width="280" height="270"
-          alt="Упаковка с питанием Кэт энерджи.">
-        <a class="program__search button" href="form.html">Подобрать программу</a>
+      <header class="program__header encourage section-wrapper section-wrapper--index section-wrapper--encourage">
+        <div class="program__header-wrapper">
+          <h2 class="program__title section-title section-title--modified">Функциональное<br>
+            питание для котов
+          </h2>
+          <p class="program__slogan">Занялся собой? Займись котом!</p>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index/can-desktop.png 1x, img/index/can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index/can-tablet.png 1x, img/index/can-tablet@2x.png 2x">
+            <img class="program__image" src="img/index/can-mobile.png" width="280" height="270" srcset="img/index/can-mobile@2x.png 2x"
+            alt="Упаковка с питанием Кэт энерджи.">
+
+          </picture>
+
+          <a class="program__search button button--search" href="form.html">Подобрать программу</a>
+
+        </div>
+
       </header>
-      <ul class="program__list program-types section-wrapper section-wrapper--index">
+      <ul class="program__list program-types section-wrapper section-wrapper--index section-wrapper--program">
         <li class="program__item program-type program-type--slim">
           <h3 class="program-type__title">Похудение</h3>
           <p class="program-type__description">Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -82,7 +100,7 @@
         </li>
       </ul>
     </section>
-    <section class="main-container__function function section-wrapper section-wrapper--index">
+    <section class="main-container__function function section-wrapper section-wrapper--function section-wrapper--index">
       <h2 class="function__title section-title">Как это работает</h2>
       <ol class="function__list functions">
         <li class="function__item function__item--leaf">Функциональное питание содержит только полезные питательные
@@ -91,7 +109,7 @@
           и готово.</li>
         <li class="function__item function__item--fork">Замените один-два приема обычной еды на наше функциональное
           питание.</li>
-        <li class="function__item function__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+        <li class="function__item function__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему <br>вашего
           питомца!</li>
       </ol>
     </section>
@@ -99,7 +117,7 @@
       <div class="example__wrapper">
         <h2 class="example__title section-title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по
           16 часов в день.
         </p>
         <div class="example__stats-wrapper">
@@ -120,10 +138,20 @@
         </div>
         <section class="example__gallery gallery">
           <h3 class="visually-hidden">Фото до и после</h3>
-          <img class="gallery__image gallery__image--before" src="img/cat-before-mobile.png" width="280" height="256"
-            alt="Было.">
-          <img class="gallery__image gallery__image--after" src="img/cat-after-mobile.png" width="280" height="256"
-            alt="Стало.">
+          <div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index/cat-before-tablet.png 1x, img/index/cat-before-tablet@2x.png 2x">
+              <img class="gallery__image gallery__image--before" src="img/index/cat-before.png" width="280" height="256" srcset="img/index/cat-before@2x.png 2x"
+              alt="Было.">
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index/cat-after-tablet.png 1x, img/index/cat-after-tablet@2x.png 2x">
+              <img class="gallery__image gallery__image--after" src="img/index/cat-after.png" width="280" height="256" srcset="img/index/cat-after@2x.png 2x"
+              alt="Стало.">
+            </picture>
+          </div>
           <div class="gallery__range-toggle">
             <button class="gallery__button button button--gallery" type="button">
               <span class="visually-hidden">Было / Стало.</span>

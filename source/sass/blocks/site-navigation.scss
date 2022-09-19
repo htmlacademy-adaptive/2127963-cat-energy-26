@@ -27,7 +27,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 36px;
+      margin-right: 35px;
     }
   }
 
@@ -49,7 +49,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 39px;
+        bottom: 0;
         left: 0;
         height: 2px;
         background: $main-color;
@@ -65,7 +65,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 39px;
+        bottom: 5px;
         left: 0;
         height: 2px;
         background: $contrast-color;
@@ -92,13 +92,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 47px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*padding-top: 42px;
+    padding-bottom: 42px;*/
     border-top: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
+    /*padding-top: 69px;*/
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   &--index {

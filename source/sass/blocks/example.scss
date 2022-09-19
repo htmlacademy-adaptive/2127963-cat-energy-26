@@ -11,8 +11,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 69px;
     padding-bottom: 75px;
-    background-image: linear-gradient($contrast-color 179px, $basic-color 179px);
+    background-image: linear-gradient($contrast-color 205px, $basic-color 205px);
   }
 }
 
@@ -69,6 +70,7 @@
   @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
     display: flex;
     margin-bottom: 104px;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,13 +93,13 @@
 }
 
 .example__stats-item {
-  padding: 14px 19px 17px 18px;
+  padding: 14px 17px 17px 16px;
 
   border: 1px solid $special-color3;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 24px 20px;
+    padding: 15px 24px;
   }
 
   &--weight {
@@ -108,8 +110,8 @@
 
   &--time {
     @media (min-width: $tablet-width) {
-      padding-right: 10px;
-      padding-left: 10px;
+      padding-right: 5px;
+      padding-left: 5px;
     }
   }
 }
@@ -128,8 +130,8 @@
 
 .example__stats-desription {
   margin: 0;
-  margin-bottom: -35px;
-  padding: 8px 18px 9px 16px;
+  margin-bottom: -42px;
+  padding: 8px 18px 8px 16px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
@@ -147,7 +149,7 @@
     margin-bottom: -45px;
     font-size: 14px;
     line-height: 14px;
-    padding: 16px 9px 20px 8px;
+    padding: 12px 9px 20px 8px;
     background-color: $contrast-color;
 
     &--time {
@@ -190,13 +192,26 @@
 }
 
 .example__cost-description {
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 63px;
+    padding-top: 0;
   }
 }
 
 .example__cost-number {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .example__gallery {
