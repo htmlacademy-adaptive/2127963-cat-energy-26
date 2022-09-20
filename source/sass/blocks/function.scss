@@ -75,6 +75,8 @@
 
     @media (min-width: $tablet-width) {
       padding-right: 79px;
+      background-size: 80px 80px;
+      background-position: 0 39px;
     }
   }
 
@@ -83,6 +85,12 @@
 
     @media (min-width: $tablet-width) {
       padding-right: 53px;
+      background-size: 80px 80px;
+      background-position: 0 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-x: 1px;
     }
   }
 
@@ -91,11 +99,26 @@
 
     @media (min-width: $tablet-width) {
       padding-right: 71px;
+      background-size: 80px 80px;
+      background-position: 0 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-x: 2px;
     }
   }
 
   &--clock {
     background-image: url("../img/background/clock.svg");
+
+    @media (min-width: $tablet-width) {
+      background-size: 80px 80px;
+      background-position: 0 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-x: 2px;
+    }
   }
 
   &--clock br {

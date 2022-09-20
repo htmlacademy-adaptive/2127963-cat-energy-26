@@ -7,7 +7,7 @@
   grid-template-areas:
     "picture info"
     "order order";
-  row-gap: 13px;
+  /*row-gap: 13px;*/
   align-items: center;
   padding: 19px 20px 25px;
 
@@ -122,7 +122,10 @@
 .product-card__title {
   margin: 0;
   margin-bottom: 14px;
-  padding-right: 40px;
+  padding-right: 64px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
   text-transform: uppercase;
   color: $special-modified-color;
 
