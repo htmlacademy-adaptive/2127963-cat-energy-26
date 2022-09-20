@@ -80,5 +80,9 @@
   &--catalog {
     padding-right: 0;
     padding-left: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 64px;
+    }
   }
 }

@@ -6,7 +6,7 @@
   padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px;
+    padding: 25px 38px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +21,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 25px;
   }
 
@@ -74,6 +75,10 @@
 }
 
 .additional-card__characteristic {
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 132px;
     text-align: left;
@@ -84,8 +89,11 @@
   text-transform: uppercase;
   text-align: right;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     min-width: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
     text-align: left;
   }
 }
