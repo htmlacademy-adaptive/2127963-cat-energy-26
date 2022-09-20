@@ -2,13 +2,13 @@
 @use "../global/viewports.scss" as *;
 
 .product-card {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "picture info"
     "order order";
-  /*row-gap: 13px;*/
-  align-items: center;
+  row-gap: 13px;
+  align-items: center;*/
   padding: 19px 20px 25px;
 
   @media (min-width: $tablet-width) {
@@ -25,7 +25,6 @@
   &--more {
     position: relative;
     display: block;
-    padding-top: 78px;
     text-align: center;
     background-color: $contrast-color;
 
@@ -77,6 +76,9 @@
 }
 
 .product-card__image-link {
+  position: absolute;
+  bottom: 76px;
+  left: 20px;
   margin: 0 auto;
   grid-area: picture;
 
@@ -104,6 +106,8 @@
 
 .product-card__info-wrapper {
   grid-area: info;
+  margin-bottom: 23px;
+  padding-left: 140px;
 }
 
 .product-card__link {
@@ -125,7 +129,7 @@
   padding-right: 64px;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   color: $special-modified-color;
 
@@ -140,6 +144,9 @@
 }
 
 .product-card__info-list {
+  font-size: 12px;
+  line-height: 16px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
   }
@@ -149,8 +156,8 @@
   display: flex;
   justify-content: space-between;
   font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  /*font-size: 12px;
+  line-height: 16px;*/
   color: $special-color;
 
   @media (min-width: $tablet-width) {

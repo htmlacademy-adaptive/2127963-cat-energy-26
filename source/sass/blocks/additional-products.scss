@@ -8,7 +8,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: calc(50% + 2px);
     height: 2px;
     width: 100%;
     background-color: $main-color;
@@ -31,6 +31,7 @@
   padding-right: 22px;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   background-color: $contrast-color;
 
   @media (min-width: $tablet-width) {

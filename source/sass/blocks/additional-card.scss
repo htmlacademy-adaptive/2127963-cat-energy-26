@@ -39,7 +39,9 @@
 .additional-card__title {
   margin: 0;
   margin-bottom: 13px;
+  font-size: 16px;
   line-height: 16px;
+  font-weight: 300;
   text-transform: uppercase;
   color: $special-modified-color;
 
@@ -54,7 +56,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
