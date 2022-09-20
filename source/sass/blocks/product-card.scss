@@ -2,24 +2,16 @@
 @use "../global/viewports.scss" as *;
 
 .product-card {
-  /*display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "picture info"
-    "order order";
-  row-gap: 13px;
-  align-items: center;*/
   padding: 19px 20px 25px;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    display: block;
     padding: 161px 37px 39px 39px;
     background-color: $basic-color;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 162px 35px 40px 35px;
+    padding: 161px 39px 40px 38px;
   }
 
   &--more {
@@ -32,6 +24,12 @@
       padding-top: 0;
       padding-bottom: 38px;
       border: 2px solid $basic-color;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 37px;
+      padding-left: 37px;
+      padding-bottom: 39px;
     }
 
     &::before {
@@ -81,7 +79,6 @@
   bottom: 76px;
   left: 20px;
   margin: 0 auto;
-  grid-area: picture;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -102,11 +99,11 @@
 
   @media (min-width: $desktop-width) {
     width: 172px;
+    height: 196px;
   }
 }
 
 .product-card__info-wrapper {
-  grid-area: info;
   margin-bottom: 23px;
   padding-left: 140px;
 
@@ -147,7 +144,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0;
+    padding-right: 9px;
+    padding-left: 20px;
   }
 }
 
@@ -164,8 +162,6 @@
   display: flex;
   justify-content: space-between;
   font-family: "Arial", sans-serif;
-  /*font-size: 12px;
-  line-height: 16px;*/
   color: $special-color;
 
   @media (min-width: $tablet-width) {
@@ -199,12 +195,13 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
   }
 }
 
 .product-card__button {
-  grid-area: order;
-
   &--more {
     @media (min-width: $tablet-width) {
       margin-bottom: 23px;

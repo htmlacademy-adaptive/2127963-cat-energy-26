@@ -2,7 +2,6 @@
 @use "../global/viewports.scss" as *;
 
 .program-type {
-  /*width: 227px;*/
   position: relative;
   padding: 30px 28px 22px 20px;
   background-color: $basic-color;
@@ -78,7 +77,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    /*width: 340px;*/
     padding: 77px 316px 57px 52px;
   }
 
@@ -132,7 +130,6 @@
 .program-type__link {
   display: block;
   line-height: 16px;
-  /*text-align: left;*/
   text-transform: uppercase;
   color: inherit;
   text-decoration: none;
