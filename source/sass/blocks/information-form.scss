@@ -377,11 +377,11 @@
   }
 
   &:hover + .information-form__control-mark {
-    border: 1px solid $special-color4;
+    outline: 1px solid $special-color4;
   }
 
   &:disabled + .information-form__control-mark {
-    border: 1px solid rgba($special-color3, 0.3);
+    outline: 1px solid rgba($special-color3, 0.3);
   }
 
   &--checkbox:checked + .information-form__control-mark::before {
@@ -513,7 +513,7 @@
   }
 
   &:focus {
-    border: 2px solid $special-color;
+    outline: 2px solid $special-color;
   }
 
   &:focus + .information-form__icon {
@@ -602,7 +602,7 @@
   }
 
   &:focus {
-    border: 2px solid $special-color;
+    outline: 2px solid $special-color;
   }
 }
 
