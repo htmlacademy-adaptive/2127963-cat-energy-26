@@ -9,7 +9,9 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <base href="https://htmlacademy-adaptive.github.io/2127963-cat-energy-26/7/">
 </head>
 
@@ -60,7 +62,7 @@
       </div>
       <div class="information-form__group-wrapper">
         <fieldset class="information-form__group information-form__group--customer customer-information">
-          <legend class="visually-hidden">Данные кота</legend>
+          <legend class="visually-hidden">Данные кота.</legend>
           <ul class="information-form__list data-list">
             <li class="information-form__item data-item">
               <label class="information-form__description information-form__description--cat-name" for="cat-name">Имя:*</label>
@@ -82,7 +84,7 @@
         </fieldset>
 
         <fieldset class="information-form__group information-form__group--choice program-choice">
-          <legend class="visually-hidden">Выбор программы</legend>
+          <legend class="visually-hidden">Выбор программы.</legend>
           <ul class="information-form__list information-form__list--choice program-list">
             <li class="information-form__item information-form__item--program program-item">
               <label class="information-form__control information-form__control--program radio">
@@ -114,10 +116,11 @@
 
 
       <fieldset class="information-form__group information-form__group--owner owner-information">
+        <legend class="visually-hidden"> Контактные данные владельца.</legend>
         <div class="information-form__title-wrapper information-form__title-wrapper--owner">
           <div class="information-form__title-inner-wrapper">
-            <legend class="information-form__title information-form__title--owner">Контактные данные (владельца кота)
-            </legend>
+            <h3 class="information-form__title information-form__title--owner">Контактные данные (владельца кота)
+            </h3>
           </div>
         </div>
         <div class="information-form__list-wrapper">
@@ -148,9 +151,10 @@
       </fieldset>
 
       <fieldset class="information-form__group information-form__group--comment comment">
+        <legend class="visually-hidden">Комментарий.</legend>
         <div class="information-form__title-wrapper information-form__title-wrapper--comment">
           <div class="information-form__title-inner-wrapper">
-            <legend class="information-form__title information-form__title--comment">Комментарий</legend>
+            <h3 class="information-form__title information-form__title--comment">Комментарий</h3>
           </div>
         </div>
         <div class="information-form__comment-container">
@@ -160,9 +164,10 @@
       </fieldset>
 
       <fieldset class="information-form__group information-form__group--additional addtional-products">
+        <legend class="visually-hidden">Дополнительно.</legend>
         <div class="information-form__title-wrapper information-form__title-wrapper--additional">
           <div class="information-form__title-inner-wrapper">
-            <legend class="information-form__title information-form__title--additional">Дополнительно</legend>
+            <h3 class="information-form__title information-form__title--additional">Дополнительно</h3>
           </div>
         </div>
         <ul class="information-form__list information-form__list--additional additional-list">
