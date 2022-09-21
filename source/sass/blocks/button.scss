@@ -24,11 +24,12 @@
   }
 
   &--additional {
+    padding-top: 59px;
     color: $additional-color;
     background-color: $contrast-color;
 
     @media (min-width: $tablet-width) {
-      padding: 161px 55px 0;
+      padding: 158px 55px 0;
       font-size: 20px;
       line-height: 22px;
     }
@@ -78,6 +79,8 @@
 
   &--search {
     display: block;
+    padding-top: 11px;
+    padding-bottom: 11px;
     min-height: 40px;
     font-size: 14px;
     line-height: 18px;
@@ -86,9 +89,7 @@
       display: inline-block;
       padding: 14px 26px;
       font-size: 20px;
-      /*line-height: 20px;*/
       line-height: 26px;
-      /*min-height: 54px;*/
     }
   }
 

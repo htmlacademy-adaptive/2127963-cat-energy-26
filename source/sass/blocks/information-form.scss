@@ -40,7 +40,6 @@
     margin: 0 auto;
     margin-bottom: 69px;
     width: 1220px;
-    /*justify-content: space-between;*/
   }
 }
 
@@ -76,19 +75,14 @@
       margin-bottom: 75px;
       padding-right: 67px;
       padding-left: 71px;
+      padding-bottom: 0;
       border: none;
-      /*padding: 30px 28px;
-      border: 1px solid $special-color5;*/
     }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
       padding: 0;
     }
-    /*@media (min-width: $desktop-width) {
-      box-sizing: border-box;
-      width: 570px;
-    }*/
   }
 
   &--owner {
@@ -118,6 +112,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 59px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 65px;
     }
   }
 }
@@ -157,33 +155,6 @@
   }
 }
 
-/*.additional-products__title {
-  margin: 0;
-  margin-bottom: 36px;
-  width: fit-content;
-  padding-left: 19px;
-  padding-right: 22px;
-  font-size: 24px;
-  line-height: 24px;
-  background-color: $contrast-color;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
-    margin-left: 40px;
-    padding-left: 37px;
-    padding-right: 36px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 81px;
-    margin-left: -40px;
-    padding-left: 40px;
-    padding-right: 35px;
-  }
-}*/
-
 .information-form__title {
   margin: 0;
   margin-bottom: 35px;
@@ -192,6 +163,7 @@
   padding-right: 14px;
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
   background-color: $contrast-color;
 
   @media (min-width: $tablet-width) {
@@ -207,12 +179,6 @@
     @media (max-width: $mobile-width-only) {
       width: 187px;
     }
-
-    /*@media (min-width: $desktop-width) {
-      margin-left: -40px;
-      padding-left: 40px;
-      padding-right: 40px;
-    }*/
   }
 
   &--comment {
@@ -221,6 +187,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 76px;
+      padding-right: 38px;
     }
   }
 
@@ -230,6 +197,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 62px;
+      padding-right: 41px;
     }
   }
 
@@ -317,6 +285,10 @@
 
     &:not(:last-child) {
       margin-bottom: 24px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 22px;
+      }
 
       @media (min-width: $desktop-width) {
         margin-bottom: 23px;
@@ -429,8 +401,18 @@
 .information-form__description {
   margin-right: 12px;
 
+  &--cat-name {
+    @media (min-width: $desktop-width) {
+      margin-right: 13px;
+    }
+  }
+
   &--weight {
     margin-right: 15px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 18px;
+    }
   }
 
   &--age {
@@ -439,10 +421,18 @@
 
   &--email {
     margin-right: 11px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 18px;
+    }
   }
 
   &--phone {
     margin-right: 8px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 14px;
+    }
   }
 }
 
@@ -466,7 +456,14 @@
   /* stylelint-enable */
 
   @media (min-width: $tablet-width) {
+    min-height: 52px;
     padding: 10px 19px 12px;
+  }
+
+  &--cat-name {
+    @media (min-width: $desktop-width) {
+      padding-left: 21px;
+    }
   }
 
   &--email {
@@ -487,7 +484,7 @@
     @media (min-width: $tablet-width) {
       padding-right: 60px;
       padding-bottom: 10px;
-      padding-left: 21px;
+      padding-left: 20px;
     }
   }
 
@@ -576,7 +573,8 @@
   border: 1px solid $special-color5;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 19px;
+    padding: 10px 19px 9px;
+    min-height: 152px;
   }
 
   &::placeholder {
@@ -641,6 +639,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     column-gap: 61px;
     padding-right: 71px;
     padding-left: 71px;

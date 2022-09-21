@@ -54,4 +54,13 @@
   @media (min-width: $tablet-width) {
     padding: 20px 14px 21px;
   }
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    fill: rgba($main-color, 0.3);
+  }
 }

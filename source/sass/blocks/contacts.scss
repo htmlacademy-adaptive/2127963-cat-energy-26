@@ -22,13 +22,11 @@
   column-gap: 2px;
   margin: 0 auto;
   padding: 26px 20px;
-  /*width: 280px;*/
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*width: 708px;*/
     padding: 56px 70px 59px;
   }
 
@@ -36,9 +34,8 @@
     position: absolute;
     left: 0;
     top: 99px;
-    /*margin-bottom: -293px;*/
     width: 405px;
-    padding: 56px 80px;
+    padding: 54px 80px 63px;
     background-color: $contrast-color;
     z-index: 2;
   }
@@ -78,6 +75,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
   }
 }
 
